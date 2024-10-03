@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TRH8p29OJUfngIK/6uyIKT0HBWdcAJ9XHaUUBfIfZgU=",
+  "Hash": "2eMaRpjqBovRyqIHM92c6omBwmv5oHV9nqhdyiXtVnQ=",
   "Source": "LibraryManagment",
   "BasePath": "_content/LibraryManagment",
   "Mode": "Default",
@@ -34,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\01c2bfd4-1fba-436f-84fc-00ac6d36f785_Screenshot 2024-09-26 175240.png"
+    },
+    {
+      "Identity": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\wwwroot\\uploads\\0b21e793-a652-4261-a3ad-f93fbbdf6f98_book_cover_15.webp",
+      "SourceId": "LibraryManagment",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\wwwroot\\",
+      "BasePath": "_content/LibraryManagment",
+      "RelativePath": "uploads/0b21e793-a652-4261-a3ad-f93fbbdf6f98_book_cover_15.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\0b21e793-a652-4261-a3ad-f93fbbdf6f98_book_cover_15.webp"
     },
     {
       "Identity": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\wwwroot\\uploads\\16edf8d9-05d2-45d4-95bb-1dd48e881f0c_backiee-301644.jpg",
@@ -243,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\8bbd26a0-f186-426e-b00a-c536e7d91599_R.jpg"
+    },
+    {
+      "Identity": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\wwwroot\\uploads\\92c95242-5983-4f11-b38e-209981077e69_Image_Processing_3dc747a7d3.webp",
+      "SourceId": "LibraryManagment",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\wwwroot\\",
+      "BasePath": "_content/LibraryManagment",
+      "RelativePath": "uploads/92c95242-5983-4f11-b38e-209981077e69_Image_Processing_3dc747a7d3.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\92c95242-5983-4f11-b38e-209981077e69_Image_Processing_3dc747a7d3.webp"
     },
     {
       "Identity": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\wwwroot\\uploads\\a8527971-970f-4124-ac7e-29477a33b9c5_Screenshot 2024-09-26 175240.png",

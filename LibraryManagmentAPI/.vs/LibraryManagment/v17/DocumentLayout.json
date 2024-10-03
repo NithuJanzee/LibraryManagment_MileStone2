@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "D:\\PRO -1\\LibraryManagmentAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|d:\\pro -1\\librarymanagmentapi\\librarymanagment\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|d:\\pro -1\\librarymanagmentapi\\librarymanagment\\repository\\historyrepository\\historyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\repository\\historyrepository\\historyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|d:\\pro -1\\librarymanagmentapi\\librarymanagment\\service\\bookservice\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\service\\bookservice\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|d:\\pro -1\\librarymanagmentapi\\librarymanagment\\interface\\irepository\\ihistory\\ihistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\interface\\irepository\\ihistory\\ihistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|d:\\pro -1\\librarymanagmentapi\\librarymanagment\\repository\\bookrepository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\repository\\bookrepository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|d:\\pro -1\\librarymanagmentapi\\librarymanagment\\service\\historyservice\\historyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\service\\historyservice\\historyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|d:\\pro -1\\librarymanagmentapi\\librarymanagment\\dto\\responsedto\\bookresponsedto\\bookresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\dto\\responsedto\\bookresponsedto\\bookresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|d:\\pro -1\\librarymanagmentapi\\librarymanagment\\interface\\iservice\\ihistory\\ihistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\interface\\iservice\\ihistory\\ihistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|d:\\pro -1\\librarymanagmentapi\\librarymanagment\\entity\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\entity\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|d:\\pro -1\\librarymanagmentapi\\librarymanagment\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|d:\\pro -1\\librarymanagmentapi\\librarymanagment\\dto\\requestdto\\historyrequest\\historyrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\dto\\requestdto\\historyrequest\\historyrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|d:\\pro -1\\librarymanagmentapi\\librarymanagment\\entity\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\entity\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +38,101 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\Controllers\\BookController.cs",
-              "ToolTip": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\BookController.cs",
-              "RelativeToolTip": "LibraryManagment\\Controllers\\BookController.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowDsAAABMAAAA",
+              "DocumentIndex": 4,
+              "Title": "HistoryController.cs",
+              "DocumentMoniker": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\HistoryController.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\Controllers\\HistoryController.cs",
+              "ToolTip": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\HistoryController.cs",
+              "RelativeToolTip": "LibraryManagment\\Controllers\\HistoryController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAowDIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T08:30:29.471Z",
+              "WhenOpened": "2024-10-03T05:27:17.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BookResponseDTO.cs",
-              "DocumentMoniker": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
-              "ToolTip": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
-              "RelativeToolTip": "LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Title": "IHistoryService.cs",
+              "DocumentMoniker": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IService\\IHistory\\IHistoryService.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\InterFace\\IService\\IHistory\\IHistoryService.cs",
+              "ToolTip": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IService\\IHistory\\IHistoryService.cs",
+              "RelativeToolTip": "LibraryManagment\\InterFace\\IService\\IHistory\\IHistoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T08:27:14.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Service\\BookService\\BookService.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\Service\\BookService\\BookService.cs",
-              "ToolTip": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Service\\BookService\\BookService.cs",
-              "RelativeToolTip": "LibraryManagment\\Service\\BookService\\BookService.cs",
-              "ViewState": "AQIAAHcAAAAAAAAAAAAIwIsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T08:25:46.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Book.cs",
-              "DocumentMoniker": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Entity\\Book.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\Entity\\Book.cs",
-              "ToolTip": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Entity\\Book.cs",
-              "RelativeToolTip": "LibraryManagment\\Entity\\Book.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBYAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T08:21:45.688Z",
+              "WhenOpened": "2024-10-03T05:27:10.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BookRepository.cs",
-              "DocumentMoniker": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
-              "ToolTip": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
-              "RelativeToolTip": "LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
-              "ViewState": "AQIAAG0AAAAAAAAAAAAcwAcAAAAiAAAA",
+              "Title": "HistoryService.cs",
+              "DocumentMoniker": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Service\\HistoryService\\HistoryService.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\Service\\HistoryService\\HistoryService.cs",
+              "ToolTip": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Service\\HistoryService\\HistoryService.cs",
+              "RelativeToolTip": "LibraryManagment\\Service\\HistoryService\\HistoryService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T08:20:17.123Z",
+              "WhenOpened": "2024-10-03T05:23:36.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IHistoryRepository.cs",
+              "DocumentMoniker": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IRepository\\IHistory\\IHistoryRepository.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\InterFace\\IRepository\\IHistory\\IHistoryRepository.cs",
+              "ToolTip": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IRepository\\IHistory\\IHistoryRepository.cs",
+              "RelativeToolTip": "LibraryManagment\\InterFace\\IRepository\\IHistory\\IHistoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T05:21:32.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HistoryRepository.cs",
+              "DocumentMoniker": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Repository\\HistoryRepository\\HistoryRepository.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\Repository\\HistoryRepository\\HistoryRepository.cs",
+              "ToolTip": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Repository\\HistoryRepository\\HistoryRepository.cs",
+              "RelativeToolTip": "LibraryManagment\\Repository\\HistoryRepository\\HistoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T05:06:18.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HistoryRequestDTO.cs",
+              "DocumentMoniker": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\DTO\\RequestDTO\\HistoryRequest\\HistoryRequestDTO.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\DTO\\RequestDTO\\HistoryRequest\\HistoryRequestDTO.cs",
+              "ToolTip": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\DTO\\RequestDTO\\HistoryRequest\\HistoryRequestDTO.cs",
+              "RelativeToolTip": "LibraryManagment\\DTO\\RequestDTO\\HistoryRequest\\HistoryRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T04:56:05.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "History.cs",
+              "DocumentMoniker": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Entity\\History.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\Entity\\History.cs",
+              "ToolTip": "D:\\PRO -1\\LibraryManagmentAPI\\LibraryManagment\\Entity\\History.cs",
+              "RelativeToolTip": "LibraryManagment\\Entity\\History.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T04:55:01.49Z",
               "EditorCaption": ""
             }
           ]
