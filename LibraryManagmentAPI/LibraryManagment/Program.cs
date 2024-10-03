@@ -2,24 +2,28 @@ using LibraryManagment.InterFace.IRepository.IAurthorRepo;
 using LibraryManagment.InterFace.IRepository.IBookRepository;
 using LibraryManagment.InterFace.IRepository.IBookTransactionRepo;
 using LibraryManagment.InterFace.IRepository.IGenreRepository;
+using LibraryManagment.InterFace.IRepository.IHistory;
 using LibraryManagment.InterFace.IRepository.IPublicationRepository;
 using LibraryManagment.InterFace.IRepository.IUserRepo;
 using LibraryManagment.InterFace.IService.IAurthorServ;
 using LibraryManagment.InterFace.IService.IBookService;
 using LibraryManagment.InterFace.IService.IBookTransactionService;
 using LibraryManagment.InterFace.IService.IGenreService;
+using LibraryManagment.InterFace.IService.IHistory;
 using LibraryManagment.InterFace.IService.iPublicationService;
 using LibraryManagment.InterFace.IService.IUserServ;
 using LibraryManagment.Repository.AurthorRepository;
 using LibraryManagment.Repository.BookRepository;
 using LibraryManagment.Repository.BookTransaction;
 using LibraryManagment.Repository.GenreRepository;
+using LibraryManagment.Repository.HistoryRepository;
 using LibraryManagment.Repository.PublicationRepository;
 using LibraryManagment.Repository.UserRepository;
 using LibraryManagment.Service.AurthorService;
 using LibraryManagment.Service.BookService;
 using LibraryManagment.Service.BookTransactionService;
 using LibraryManagment.Service.GenreService;
+using LibraryManagment.Service.HistoryService;
 using LibraryManagment.Service.PublicationService;
 using LibraryManagment.Service.UserService;
 
@@ -54,6 +58,8 @@ builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddSingleton<IBookTransactionRepository>(provider => new BookTransactionRepository(connectionString));
 builder.Services.AddScoped<IBookTransactionService, BookTransactionService>();
 
+builder.Services.AddSingleton<IHistoryRepository>(provider => new HistoryRepository(connectionString));
+builder.Services.AddScoped<IHistoryService, HistoryService>();
 
 
 var app = builder.Build();
