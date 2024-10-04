@@ -1,0 +1,83 @@
+.container{
+    width: 100%;
+ }
+ .navbar {
+    background-color: #343a40;
+    width:100%;
+    
+  }
+  
+  .navbar-brand {
+    
+    width: 55px;
+    height: 55px;
+    border-radius: 20px;
+  }
+  .main{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: Cursive;
+    text-align: center;
+
+  }
+  .mainh1{
+    color: #febb69;
+  }
+
+  .navbar-brand:hover {
+    color: #f5c04b;
+  }
+
+  .offcanvas-header {
+    background-color: #343a40;
+    color: #febb69;
+  }
+
+  .offcanvas-body .nav-link {
+    color: #343a40;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .offcanvas-body .nav-link.active {
+    color: #febb69;
+  }
+
+  .offcanvas-body .nav-link:hover {
+    color: #febb69;
+  }
+
+  .product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px; 
+    margin-bottom: 2px;
+}
+
+.product-image {
+    margin-top: 17px;
+    width: 100%;   
+    height: auto;   
+    max-height: 100%; 
+    object-fit:contain;
+}
+
+.card {
+    border: 1px solid #e0e0e0;  
+    border-radius: 8px;       
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;  
+}
+
+.card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#gridContent{
+    text-align: center;
+}
+
+
+
+
