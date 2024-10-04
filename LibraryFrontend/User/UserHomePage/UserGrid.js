@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <strong>Genre:</strong>${Genre.name}<br>
                         <strong>Publication:</strong>${Publication.name}
                     </p>
-                    <button class="btn btn-primary w-100 add-to-cart-button">Add to Cart</button>
+                    <button class="btn btn-primary w-100 add-to-cart-button">View More</button>
                 </div>
             </div>
         </div>`
