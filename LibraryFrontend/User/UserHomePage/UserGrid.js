@@ -7,9 +7,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         let bookDatatemoplate = '';
         for (const data of AllBookData) {
+            //Make First is first 
             const AllImages = data.image.split(',').map(img => img.trim());
             const firstImage = AllImages[0]; 
             const Image = `http://localhost:5000${firstImage}`.trim();
+
             const FetchAuthorName = await fetch(`http://localhost:5000/api/Aurthor/GetByID?Id=${data.authorId}`);
             const AuthorName = await FetchAuthorName.json();
             const FetchGenreName = await fetch(`http://localhost:5000/api/GenreControler/GetById?id=${data.genreId}`)
@@ -29,8 +31,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <strong>Genre:</strong>${Genre.name}<br>
                         <strong>Publication:</strong>${Publication.name}
                     </p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal"
-                    >View More</button>
+                    <button type="button" class="btn btn-primary" id="openBookModal"
+                    id="openModelWindow" data-id="${data.id}">View More</button>
                 </div>
             </div>
         </div>`
@@ -38,8 +40,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             document.getElementById('UppendBooks').innerHTML = bookDatatemoplate;
         }
     }
-    //DropDowns
 
+    //DropDowns
     //Genre Drop Down
     const FilterDropGenre = async () => {
         const FetchGenreName = await fetch(`http://localhost:5000/api/GenreControler/GetAllGenre`);
@@ -74,8 +76,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('authorSelect').innerHTML = `<option selected>Choose...</option>` + AuthorTemplate;
     }
 
-    PrintBookData()
-    FilterDropGenre()
-    FilterDropPublication()
-    FilterDropAuthor()
+    //Model window work
+    const openModelWindow = () => {
+        document.getElementById('UppendBooks').addEventListener('click', function(event) {
+            if (event.target.classList.contains('btn-primary')) {
+                const bookId = event.target.getAttribute('data-id');
+                var bookModal = new bootstrap.Modal(document.getElementById('bookModal'));
+                bookModal.show();
+
+                console.log(bookId)
+            }
+        });
+    }
+
+    PrintBookData();
+    FilterDropGenre();   
+    FilterDropPublication();
+    FilterDropAuthor();
+    openModelWindow();
 })
