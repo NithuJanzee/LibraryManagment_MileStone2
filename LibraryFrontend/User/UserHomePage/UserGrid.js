@@ -27,7 +27,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <strong>Genre:</strong>${Genre.name}<br>
                         <strong>Publication:</strong>${Publication.name}
                     </p>
-                    <button class="btn btn-primary w-100 add-to-cart-button">View More</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal"
+                    >View More</button>
                 </div>
             </div>
         </div>`
