@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         let bookDatatemoplate = '';
         for (const data of AllBookData) {
-            const Image = `http://localhost:5000${data.image}`.trim();
+            const AllImages = data.image.split(',').map(img => img.trim());
+            const firstImage = AllImages[0]; 
+            const Image = `http://localhost:5000${firstImage}`.trim();
             const FetchAuthorName = await fetch(`http://localhost:5000/api/Aurthor/GetByID?Id=${data.authorId}`);
             const AuthorName = await FetchAuthorName.json();
             const FetchGenreName = await fetch(`http://localhost:5000/api/GenreControler/GetById?id=${data.genreId}`)
