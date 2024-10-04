@@ -10,5 +10,6 @@ namespace LibraryManagment.InterFace.IService.IBookService
         Task<BookResponseDTO> Addbook(BookRequestDTO requestDTO);
         Task<List<BookResponseDTO>> GetAllBooks();
         Task<List<BookResponseDTO>> FilterBookBYId(Guid? authorId, Guid? genreId, Guid? publicationId);
+        Task<BookResponseDTO> GetById(Guid Id);
     }
 }

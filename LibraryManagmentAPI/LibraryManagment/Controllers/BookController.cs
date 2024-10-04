@@ -70,5 +70,21 @@ namespace LibraryManagment.Controllers
                 return BadRequest("Not Found");
             }
         }
+
+        //Get by ID
+        [HttpGet("GetById")]
+        public async Task<IActionResult> GetById(Guid id)
+        {
+            try
+            {
+                var data = await _bookService.GetById(id);
+                return Ok(data);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

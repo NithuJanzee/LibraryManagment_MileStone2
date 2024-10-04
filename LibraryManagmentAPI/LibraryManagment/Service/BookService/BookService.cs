@@ -1,5 +1,6 @@
 ﻿using LibraryManagment.DTO.RequestDTO.BookRequestDTO;
 using LibraryManagment.DTO.ResponseDTO.BookResponseDto;
+using LibraryManagment.DTO.ResponseDTO.GenreResponseDTO;
 using LibraryManagment.Entity;
 using LibraryManagment.InterFace.IRepository.IBookRepository;
 using LibraryManagment.InterFace.IService.IBookService;
@@ -138,6 +139,40 @@ namespace LibraryManagment.Service.BookService
             {
                 throw new Exception("Not Found");
             }
+        }
+
+        //get by id 
+        public async Task<BookResponseDTO> GetById(Guid Id)
+        {
+
+            if (Id == Guid.Empty)
+            {
+                throw new Exception("Enter Id");
+            }
+
+
+            try
+            {
+
+                var data = await _bookRepository.GetById(Id);
+                var response = new BookResponseDTO()
+                {
+                    Id = Id,
+                    Name = data.Name,
+                    Image= data.Image,
+                    copies= data.copies,
+                    AuthorId= data.AuthorId,
+                    PublicationId= data.PublicationId,
+                    GenreId= data.GenreId,
+
+                };
+                return response;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
     }
 }
