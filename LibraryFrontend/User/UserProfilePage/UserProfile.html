@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../UserHomePage/UserGrid.css">
+    <link rel="stylesheet" href="../UserProfilePage/UserProfile.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Binary Bookshelf</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Binary Bookshelf</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link " href="../UserHomePage/UserGrid.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../UserDashBoardPage/UserDashBoard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../UserProfilePage/UserProfile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Status</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div>
+      <div class="container">
+      
+
+        <section class="main" id="profile-container" >
+            <div class="row">
+                <div class="col">
+                    <section class="main-Profile">
+                        <div class="heading">
+                            <h1>Personal</h1><h1>Information</h1>
+                        </div>
+                        <div class="profile-box">
+                            <form id="profile-form">
+                                <table>
+                                    <tr>
+                                        <td><label for="id">User Id</label></td>
+                                        <td><input type="text" id="id" name="id" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="fname">First Name</label></td>
+                                        <td><input type="text" id="fname" name="fname" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="lname">Last Name</label></td>
+                                        <td><input type="text" id="lname" name="lname" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="nic">NIC Number</label></td>
+                                        <td><input type="text" id="nic" name="nic" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="email">Email</label></td>
+                                        <td><input type="email" id="email" name="email" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="phone">Phone Number</label></td>
+                                        <td><input type="tel" id="phone" name="phone" disabled></td>
+                                    </tr>
+                                </table>
+            
+                                <div id="button-container">
+                                    <button type="button" class="main-btn" id="update-button">Update Profile</button>
+                                    <button type="button"  class="main-btn" id="save-button" >Save</button>
+                                    <button type="button"  class="main-btn" id="Cancel-button" >Cancel</button>
+                                </div>
+            
+                            </form>
+                        </div>
+                    </section>
+        
+                    <section class="main-password-change">
+                        <div class="heading">
+                            <h1>Password</h1><h1>Change</h1>
+                        </div>
+                        <div class="password-box">
+                            <form id="password-form">
+                                <table>
+                                    <tr>
+                                        <td><label for="oldPassword">Old Password</label></td>
+                                        <td><input type="password" id="oldPassword" name="oldPassword" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="newPassword">New Password</label></td>
+                                        <td><input type="password" id="newPassword" name="newPassword" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="confirmPassword">Confirm Password</label></td>
+                                        <td><input type="password" id="confirmPassword" name="confirmPassword" ></td>
+                                    </tr>
+                                </table>
+            
+                                <div id="button-container">
+                                    <button type="button" class="main-btn" id="update-password">Update Password</button>
+                                </div>
+            
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+
+    
+    <!-- <script src="../UserProfilePage/UserProfile.js"></script> -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
