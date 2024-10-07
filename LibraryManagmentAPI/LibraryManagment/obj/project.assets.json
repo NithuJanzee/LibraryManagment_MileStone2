@@ -2109,11 +2109,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\UT01268\\Desktop\\progit\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\LibraryManagment.csproj",
+      "projectUniqueName": "C:\\Users\\UT01268\\Documents\\GitHub\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\LibraryManagment.csproj",
       "projectName": "LibraryManagment",
-      "projectPath": "C:\\Users\\UT01268\\Desktop\\progit\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\LibraryManagment.csproj",
+      "projectPath": "C:\\Users\\UT01268\\Documents\\GitHub\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\LibraryManagment.csproj",
       "packagesPath": "C:\\Users\\UT01268\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UT01268\\Desktop\\progit\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\obj\\",
+      "outputPath": "C:\\Users\\UT01268\\Documents\\GitHub\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\UT01268\\AppData\\Roaming\\NuGet\\NuGet.Config",
