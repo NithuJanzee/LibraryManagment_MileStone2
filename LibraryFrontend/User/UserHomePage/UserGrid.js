@@ -112,6 +112,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <img src="${imageUrl}" class="d-block w-100" alt="Book Cover ${index + 1}">
                     </div>
                 `;
+
+                //Conform request
+                const ConformBtn = document.getElementById('conformRequest');
+                ConformBtn.addEventListener('click' , async()=>{
+                   console.log(bookDetails.id)
+                   //IWant to add the user id
+                })
             });
 
             document.querySelector('.bookCoverShow').innerHTML = imageTemplate;
@@ -120,7 +127,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 var bookModal = new bootstrap.Modal(document.getElementById('bookModal'));
                 bookModal.show();
 
-                console.log(bookId)
+                //console.log(bookId)
             }
         });
     }
