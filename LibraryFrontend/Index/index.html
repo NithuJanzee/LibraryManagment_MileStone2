@@ -41,13 +41,11 @@
         </div>
     </nav>
 
-  
     <div class="text-center my-5">
         <h1 class="display-4">Binary Bookshelf</h1>
         <p class="lead">"I do believe something very magical can happen when you read a good book"</p>
     </div>
 
-    
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 75%; margin: 0 auto;">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="5000">
@@ -91,7 +89,7 @@
 
     <!-- Sign In Modal -->
     <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
@@ -101,13 +99,13 @@
                     <form>
                         <div class="mb-3">
                             <label for="nicSignIn" class="form-label">NIC</label>
-                            <input type="text" class="form-control" id="nicSignIn" required>
+                            <input type="text" class="form-control input-style" id="nicSignIn" required>
                         </div>
                         <div class="mb-3">
                             <label for="passwordSignIn" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="passwordSignIn" required>
+                            <input type="password" class="form-control input-style" id="passwordSignIn" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Sign In</button>
+                        <button type="submit" class="btn btn-primary w-100">Sign In</button>
                     </form>
                 </div>
             </div>
@@ -116,7 +114,7 @@
 
     <!-- Sign Up Modal -->
     <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="signUpModalLabel">Create Account</h5>
@@ -126,36 +124,42 @@
                     <form>
                         <div class="mb-3">
                             <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstName" required>
+                            <input type="text" class="form-control input-style" id="firstName" required>
                         </div>
                         <div class="mb-3">
                             <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" required>
+                            <input type="text" class="form-control input-style" id="lastName" required>
                         </div>
                         <div class="mb-3">
                             <label for="nicSignUp" class="form-label">NIC</label>
-                            <input type="text" class="form-control" id="nicSignUp" required>
+                            <input type="text" class="form-control input-style" id="nicSignUp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email</label>
+                            <input type="text" class="form-control input-style" id="Email" required>
                         </div>
                         <div class="mb-3">
                             <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone" required>
+                            <input type="tel" class="form-control input-style" id="phone" required>
                         </div>
                         <div class="mb-3">
                             <label for="passwordSignUp" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="passwordSignUp" required>
+                            <input type="password" class="form-control input-style" id="passwordSignUp" required>
                         </div>
                         <div class="mb-3">
                             <label for="confirmPassword" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirmPassword" required>
+                            <input type="password" class="form-control input-style" id="confirmPassword" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                        <div class="mb-3" id="ThrowMessages">
+                            <!-- <p style="color: red;">somethingWrong</p> -->
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" id="signUpBtn">Sign Up</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-  
     <script src="../User/js/bootstrap.min.js"></script>
     <script src="./index.js"></script>
 </body>
