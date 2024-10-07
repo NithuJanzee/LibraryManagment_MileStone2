@@ -105,16 +105,13 @@
             <div class="col-md-6">
               <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="https://via.placeholder.com/300x400" class="d-block w-100" alt="Book Cover 1">
+                  <!-- dynamicBookShow -->
+                  <div class="bookCoverShow">
+                    <div class="carousel-item">
+                       
+                     </div>
+                   </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="https://via.placeholder.com/300x400" class="d-block w-100" alt="Book Cover 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://via.placeholder.com/300x400" class="d-block w-100" alt="Book Cover 3">
-                  </div>
-                </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -125,23 +122,25 @@
                 </button>
               </div>
             </div>
-
-            <!-- Right-hand side: Book details with centered author image -->
+            <!-- Book details with author image -->
             <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
-              <h4>Book Name: The Great Adventure</h4>
-              <p><strong>Author:</strong> John Doe</p>
-              <p><strong>Genre:</strong> Adventure</p>
-              <p><strong>Publication:</strong> Adventure House</p>
+              <h4 id="ModelWindowBookName">Book Name: The Great Adventure</h4>
+              <p id="ModelWindowAuthorName"><!--authorName--></p>
+              <p id="ModelwinodwGenreName"> <!--genreName--></p>
+              <p id="ModelWindowPublicationName">Adventure House</p>
 
               <!-- Larger author image in circle, centered -->
-              <div class="mt-3">
-                <img src="https://via.placeholder.com/150" class="rounded-circle" alt="Author Image" width="250"
-                  height="250">
+              <div class="mt-3" id="AuthorImage">
+                
               </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
+
+
+
+
           <!-- Cancel and Request Buttons -->
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
           <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -162,16 +161,17 @@
         <div class="modal-body">
           Are you sure you want to request this book?
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer" id="conformRequest">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary">Confirm</button>
+          <button type="button" class="btn btn-primary" id="conformRequest">Confirm</button>
         </div>
       </div>
     </div>
   </div>
 
-  
+
   <script src="../js/bootstrap.min.js"></script>
   <script src="./UserGrid.js"></script>
 </body>
+
 </html>

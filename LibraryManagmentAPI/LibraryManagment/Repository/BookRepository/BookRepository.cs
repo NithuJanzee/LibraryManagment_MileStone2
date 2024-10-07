@@ -152,5 +152,35 @@ namespace LibraryManagment.Repository.BookRepository
             return books;
         }
 
+        //Get By bookId
+        public async Task<Book> GetById(Guid id)
+        {
+            Book book = null;
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var command = new SqlCommand(
+                    "  SELECT * FROM Book WHERE ID = @id", connection);
+                command.Parameters.AddWithValue("@id", id);
+                await connection.OpenAsync();
+                using (var reader = await command.ExecuteReaderAsync())
+                {
+                    if (await reader.ReadAsync())
+                    {
+                        book = new Book
+                        {
+                            Id = reader.GetGuid(0),          
+                            Name = reader.GetString(1),      
+                            copies = reader.GetInt32(2),     
+                            AuthorId = reader.GetGuid(3),     
+                            GenreId = reader.GetGuid(4),      
+                            PublicationId = reader.GetGuid(5),
+                            Image = reader.GetString(6),      
+                        };
+                    }
+                }
+                return book;
+            }
+        }
+
     }
 }

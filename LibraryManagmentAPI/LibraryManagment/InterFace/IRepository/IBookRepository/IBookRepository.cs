@@ -11,5 +11,8 @@ namespace LibraryManagment.InterFace.IRepository.IBookRepository
         Task<Book> Addbooks(Book book);
         Task<List<Book>> GetAllBooks();
         Task<List<BookResponseDTO>> FilterBookBYId(Guid? authorId, Guid? genreId, Guid? publicationId);
+        Task<Book> GetById(Guid id);
+
+
     }
 }
