@@ -3,102 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Binary Bookshelf</title>
     <link rel="stylesheet" href="../User/css/bootstrap.min.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="../User/UserHomePage/UserGrid.css">
-   
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="Adimin.html"><img src="./images/logo.jpg" class="navbar-brand"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Admin.html">
+                <img src="./images/logo.jpg" alt="Binary Bookshelf Logo" width="50">
+                Binary Bookshelf
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Binary Bookshelf</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../UserHomePage/UserGrid.html">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="">Sign In</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Sign Up</a>
-                    </li>
-                  </ul>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../UserHomePage/UserGrid.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signInModal">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
             </div>
-          </nav>
-
-    
-
-    <div class="main">
-      <h1 class="mainh1">Binary Bookshelf</h1>
-      <h2 class="mainh2">"I do believe somthing very magical<br>can happen when you read a good book"</h2> </div>
-
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 75%;margin-left: 13%;margin-right: 13%;">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="5000" >
-          <img src="./images/4.jpg" class="d-block w-100" alt="..."style height="600px">
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./images/2.jpg" class="d-block w-100" alt="..."style height="600px">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/3.jpg" class="d-block w-100" alt="..."style height="600px">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="text-center my-5">
+        <h1 class="display-4">Binary Bookshelf</h1>
+        <p class="lead">"I do believe something very magical can happen when you read a good book"</p>
     </div>
-    <div class="d-flex justify-content-center"><div class="container text-center" style="background-color: black; color: white; padding: 20px;margin-top: 20px;" >
-      <div class="row">
-        <div class="col">
-          <img src="./images/logo.jpg" style="width: 150px; height: 150px;">
+
+    <!-- Carousel -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 75%; margin: 0 auto;">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="./images/4.jpg" class="d-block w-100" alt="Image 1" style="height: 600px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/2.jpg" class="d-block w-100" alt="Image 2" style="height: 600px;">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/3.jpg" class="d-block w-100" alt="Image 3" style="height: 600px;">
+            </div>
         </div>
-        <div class="col">
-         Contect Us
-         <Ul>
-          Binary Library<br>
-          123456789<br>
-          binarylibrary@gmail.com<br>
-       Jaffna Town
-      
-         </Ul>
-        </div>
-        <div class="col">
-          Follow Us<br>
-          <img src="./images/footer.jpg" style="width: 150px; height: 150px;">
-        </div>
-      </div>
-  
-   
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    
-   
 
+    <!-- Footer Section -->
+    <footer class="text-white text-center py-4" style="background-color: black; margin-top: 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/logo.jpg" alt="Library Logo" style="width: 150px; height: 150px;">
+                </div>
+                <div class="col">
+                    <h5>Contact Us</h5>
+                    <p>Binary Library<br>123456789<br>binarylibrary@gmail.com<br>Jaffna Town</p>
+                </div>
+                <div class="col">
+                    <h5>Follow Us</h5>
+                    <img src="./images/footer.jpg" alt="Follow Us" style="width: 150px; height: 150px;">
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    
+    <!-- Sign In Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nicSignIn" class="form-label">NIC</label>
+                            <input type="text" class="form-control" id="nicSignIn" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordSignIn" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="passwordSignIn" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signUpModalLabel">Create Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nicSignUp" class="form-label">NIC</label>
+                            <input type="text" class="form-control" id="nicSignUp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordSignUp" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="passwordSignUp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="../User/js/bootstrap.min.js"></script>
     <script src="./index.js"></script>
-  
 </body>
 </html>
-
