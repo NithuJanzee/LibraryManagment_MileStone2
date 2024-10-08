@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Member Profile</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f7f7f7;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: #ff914d;
+            font-size: 24px;
+        }
+
+        header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        header nav a:hover {
+            color: #ff914d;
+        }
+
+        /* Profile Section */
+        .profile-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff914d;
+            margin-bottom: 20px;
+        }
+
+        .profile-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .profile-info img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #ff914d;
+        }
+
+        .profile-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .profile-details p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .profile-details strong {
+            color: #333;
+        }
+
+        .profile-edit-btn {
+            background-color: #ff914d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .profile-edit-btn:hover {
+            background-color: #e57d3b;
+        }
+
+        /* Form Styles */
+        .profile-form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .profile-form label {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .profile-form input[type="text"],
+        .profile-form input[type="email"],
+        .profile-form input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .save-btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .save-btn:hover {
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Binary Bookshelf</h1>
+    <nav>
+        <a href="ui.html">Home</a>
+        <a href="#">Dashboard</a>
+        <a href="Profile.html">Profile</a>
+        <a href="#">Status</a>
+    </nav>
+</header>
+
+<!-- Profile Section -->
+<div class="profile-container">
+    <h2>Member Profile</h2>
+    
+    <div class="profile-info">
+        <!-- Profile Image -->
+        <img src="pro.png" alt="Profile Picture">
+        
+        <!-- Profile Details -->
+        <div class="profile-details">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john.doe@example.com</p>
+            <p><strong>Member ID:</strong> 12345</p>
+            <p><strong>NIC:</strong> A123456789</p>
+            <button class="profile-edit-btn" onclick="toggleEditForm()">Edit Profile</button>
+        </div>
+    </div>
+
+    <!-- Profile Edit Form (Initially Hidden) -->
+    <div id="edit-form" class="profile-form" style="display: none;">
+        <label for="name">Name</label>
+        <input type="text" id="name" value="John Doe">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" value="john.doe@example.com">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter new password">
+
+        <button class="save-btn" onclick="saveProfile()">Save Changes</button>
+    </div>
+</div>
+
+<script>
+    // Toggle Edit Form Visibility
+    function toggleEditForm() {
+        const editForm = document.getElementById('edit-form');
+        if (editForm.style.display === 'none') {
+            editForm.style.display = 'block';
+        } else {
+            editForm.style.display = 'none';
+        }
+    }
+
+    // Save Profile Changes
+    function saveProfile() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Here, you can add functionality to save the updated profile information
+        alert('Profile updated successfully!\nName: ' + name + '\nEmail: ' + email);
+    }
+</script>
+
+</body>
+</html>
