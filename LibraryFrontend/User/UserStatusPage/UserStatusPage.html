@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../UserHomePage/UserGrid.css">
+  
+  
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Binary Bookshelf</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Binary Bookshelf</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link " href="../UserHomePage/UserGrid.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../UserDashBoardPage/UserDashBoard.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../UserProfilePage/Profile.html">Profile</a>
+              </li>
+             
+             <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../UserStatusPage/UserStatusPage.html">Status</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <style>
+    body {
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+
+
+    h2 {
+      color: #ff914d;
+      margin-bottom: 20px;
+    }
+
+    table {
+      background-color: white;
+      border-collapse: collapse;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+      border: 1px solid #333;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #ff914d;
+      color: white;
+    }
+
+    td {
+      background-color: #fff;
+      color: #333;
+    }
+
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+
+    .btn-orange {
+      background-color: #ff914d;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .btn-orange:hover {
+      background-color: #e67e22;
+    }
+
+    .spacer {
+      margin-top: 40px;
+    }
+  </style>
+  </head>
+
+  <body>
+
+
+
+    <!-- Book Pickup Request Table -->
+    <h2>Book Pickup Request</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Book Name</th>
+          <th>Author Name</th>
+          <th>Genre</th>
+          <th>Publication</th>
+          <th>Request Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Great Gatsby</td>
+          <td>F. Scott Fitzgerald</td>
+          <td>Fiction</td>
+          <td>1925</td>
+          <td>2024-10-07</td>
+          <td><button class="btn-orange">Request</button></td>
+        </tr>
+        <tr>
+          <td>To Kill a Mockingbird</td>
+          <td>Harper Lee</td>
+          <td>Fiction</td>
+          <td>1960</td>
+          <td>2024-10-06</td>
+          <td><button class="btn-orange">Request</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Spacer for separation between tables -->
+    <div class="spacer"></div>
+
+    <!-- Lend History Table -->
+    <h2>Lend History</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Book Name</th>
+          <th>Author Name</th>
+          <th>Genre</th>
+          <th>Publication </th>
+          <th>Lend Date</th>
+          <th>Due Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Great Gatsby</td>
+          <td>F. Scott Fitzgerald</td>
+          <td>Fiction</td>
+          <td>1925</td>
+          <td>2024-10-01</td>
+          <td>2024-10-07</td>
+        </tr>
+        <tr>
+          <td>To Kill a Mockingbird</td>
+          <td>Harper Lee</td>
+          <td>Fiction</td>
+          <td>1960</td>
+          <td>2024-09-29</td>
+          <td>2024-10-06</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Spacer for separation between tables -->
+    <div class="spacer"></div>
+
+    <!-- Return History Table -->
+    <h2>Return History</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Book Name</th>
+          <th>Author Name</th>
+          <th>Genre</th>
+          <th>Publication </th>
+          <th>Lend Date</th>
+          <th>Due Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Great Gatsby</td>
+          <td>F. Scott Fitzgerald</td>
+          <td>Fiction</td>
+          <td>1925</td>
+          <td>2024-10-01</td>
+          <td>2024-10-07</td>
+          <td>Returned</td>
+
+        </tr>
+        <tr>
+          <td>To Kill a Mockingbird</td>
+          <td>Harper Lee</td>
+          <td>Fiction</td>
+          <td>1960</td>
+          <td>2024-09-29</td>
+          <td>2024-10-06</td>
+          <td>Returned</td>
+        </tr>
+      </tbody>
+    </table>
+
+   
+
+   
+  </body>
+
+</html>
