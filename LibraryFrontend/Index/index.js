@@ -93,6 +93,10 @@ SignInButton.addEventListener('click', async (event) => {
 
   if (bool == true) {
     messages1.innerHTML = '<p class="Gmessage">LogIn successful</p>';
+    localStorage.setItem('loggedUSer', login.nic);
+    setTimeout(() => {
+      window.location.href='../User/UserHomePage/UserGrid.html'
+    }, 1000);
   }
   else {
     messages1.innerHTML = '<p id="Bmessage">Please Check your Nic and Password</p>';
