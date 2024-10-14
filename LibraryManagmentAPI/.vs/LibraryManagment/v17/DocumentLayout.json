@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\user\\desktop\\mile stone\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\repository\\bookrepository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\user\\desktop\\mile stone\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\repository\\bookrepository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\repository\\bookrepository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\entity\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\user\\desktop\\mile stone\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\entity\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\entity\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\service\\bookservice\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\user\\desktop\\mile stone\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\service\\bookservice\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\service\\bookservice\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\dto\\responsedto\\bookresponsedto\\bookresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\user\\desktop\\mile stone\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\dto\\responsedto\\bookresponsedto\\bookresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\dto\\responsedto\\bookresponsedto\\bookresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\user\\desktop\\mile stone\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\interface\\iservice\\ibookservice\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\user\\desktop\\mile stone\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\interface\\iservice\\ibookservice\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\interface\\iservice\\ibookservice\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\interface\\irepository\\ibookrepository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\user\\desktop\\mile stone\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\interface\\irepository\\ibookrepository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\interface\\irepository\\ibookrepository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,17 +42,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\appsettings.json",
               "RelativeDocumentMoniker": "LibraryManagment\\appsettings.json",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\appsettings.json",
               "RelativeToolTip": "LibraryManagment\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-07T16:27:43.79Z",
               "EditorCaption": ""
@@ -61,9 +73,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Entity\\Book.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Entity\\Book.cs",
               "RelativeDocumentMoniker": "LibraryManagment\\Entity\\Book.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Entity\\Book.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Entity\\Book.cs",
               "RelativeToolTip": "LibraryManagment\\Entity\\Book.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -73,9 +85,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "BookResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
               "RelativeDocumentMoniker": "LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
               "RelativeToolTip": "LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -85,9 +97,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "BookController.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\BookController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "LibraryManagment\\Controllers\\BookController.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\BookController.cs",
               "RelativeToolTip": "LibraryManagment\\Controllers\\BookController.cs",
               "ViewState": "AQIAAD4AAAAAAAAAAAAIwE8AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,9 +109,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "IBookService.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IService\\IBookService\\IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IService\\IBookService\\IBookService.cs",
               "RelativeDocumentMoniker": "LibraryManagment\\InterFace\\IService\\IBookService\\IBookService.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IService\\IBookService\\IBookService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IService\\IBookService\\IBookService.cs",
               "RelativeToolTip": "LibraryManagment\\InterFace\\IService\\IBookService\\IBookService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -109,9 +121,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Service\\BookService\\BookService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Service\\BookService\\BookService.cs",
               "RelativeDocumentMoniker": "LibraryManagment\\Service\\BookService\\BookService.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Service\\BookService\\BookService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Service\\BookService\\BookService.cs",
               "RelativeToolTip": "LibraryManagment\\Service\\BookService\\BookService.cs",
               "ViewState": "AQIAAIgAAAAAAAAAAAAcwK0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -121,9 +133,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "IBookRepository.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IRepository\\IBookRepository\\IBookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IRepository\\IBookRepository\\IBookRepository.cs",
               "RelativeDocumentMoniker": "LibraryManagment\\InterFace\\IRepository\\IBookRepository\\IBookRepository.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IRepository\\IBookRepository\\IBookRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IRepository\\IBookRepository\\IBookRepository.cs",
               "RelativeToolTip": "LibraryManagment\\InterFace\\IRepository\\IBookRepository\\IBookRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -133,9 +145,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "BookRepository.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
               "RelativeDocumentMoniker": "LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\mile stone\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
               "RelativeToolTip": "LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
               "ViewState": "AQIAADYAAAAAAAAAAAAswLIAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
