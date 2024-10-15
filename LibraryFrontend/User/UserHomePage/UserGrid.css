@@ -15,6 +15,10 @@
     color: #f5c04b;
   }
 
+  .nav-item :hover{
+    color:  #f5c04b;
+  }
+
   .offcanvas-header {
     background-color: #343a40;
     color: #febb69;

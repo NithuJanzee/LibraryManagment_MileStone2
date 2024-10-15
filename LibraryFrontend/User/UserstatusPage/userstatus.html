@@ -11,38 +11,45 @@
     <div class="container-fluid">
       <a class="navbar-brand text text-warning" >
         
-          <img src="./images/logo1.png" alt="Binary Bookshelf Logo" width="50">
+          <img src="/LibraryFrontend/Index/images/logo1.png" alt="Binary Bookshelf Logo" width="50">
           Binary Bookshelf
       
       </a>
+
+      <img src="/LibraryFrontend/Index/images/logo1.png" alt="Binary Bookshelf Logo" width="50">
+
+
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav ">
-          <a class="nav-link text-white fs-5 tex" aria-current="page" href="../UserHomePage/UserGrid.html">Home</a>
-          <a class="nav-link active text-warning fs-5 tex" href="#"> Dashboard</a>
-          <a class="nav-link text-white fs-5 tex" href="#">Profile</a>
-          <a class="nav-link text-white fs-5 text" href="/LibraryFrontend/User/UserstatusPage/userstatus.html">Status</a>
+          <a class="nav-link text-white fs-5 text" aria-current="page" href="/LibraryFrontend/User/UserHomePage/UserGrid.html">Home</a>
+          <a class="nav-link  text-white fs-5 text" href="/LibraryFrontend/User/UserDashBoardPage/UserDashBoard.html"> Dashboard</a>
+          <a class="nav-link text-white fs-5 text" href="">Profile</a>
+          <a class="nav-link  active text-warning fs-5 text" href="/LibraryFrontend/User/UserstatusPage/userstatus.html">Status</a>
 
         
         </div>
-        <a href="//LibraryFrontend/Index/index.html"><button type="button" class="btn btn-outline-light"  >LOG OUT</button>  </a>
+        <a href="/LibraryFrontend/Index/index.html"><button type="button" class="btn btn-outline-light"  >LOG OUT</button>  </a>
       </div>
     </div>
   </nav>
   <div class="table">
   <div class="row">
-    <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="col-sm-6 ">
   <table class="table table-dark">
-    <h1 class="h1" style="font-family: 'Times New Roman' ; font-size:large;">Barrow Book Details</h1>
+    <h1 class="h1" style="font-family: 'Times New Roman' ; font-size:large;">User Data History</h1>
     <thead>
       <tr>
-        <td>Book Title</td>
-        <td>Author</td>
-        <td>Quantity</td>
-        <td>Barrow Date</td>
+        <td>User Name</td>
+        <td>Book title</td>
+        <td>Request Date</td>
+        <td>Lentated  Date</td>
+        <td>Due Date</td>
         <td>Return Date</td>
+        <td>Status</td>
       </tr>
     </thead>
     <tbody class="table table-light">
@@ -57,26 +64,11 @@
 
 
 
-  <div class="col-sm-6 mb-3 mb-sm-0">
 
-  <table class="table table-dark">
-    <h1 class="h1" style="font-family: 'Times New Roman' ; font-size:large;">Request Book Details</h1>
-    <thead>
-      <tr>
-        <td>Book Title</td>
-        <td>Author</td>
-        <td>Genre</td>
-        <td>Puplication</td>
-       
-      </tr>
-    </thead>
-    <tbody class="table table-light">
-      <tr class="table-active">
-      </tr>
-    </tbody>
-  </table>
 
-</div>
+
+  <div class="col-sm-3 mb-3 mb-sm-0">
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
