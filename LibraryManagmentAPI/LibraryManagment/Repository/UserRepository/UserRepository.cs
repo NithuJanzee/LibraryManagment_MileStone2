@@ -1,5 +1,4 @@
 ﻿using LibraryManagment.DTO.RequestDTO.UserRequest;
-using LibraryManagment.DTO.ResponseDTO.UserResponse;
 using LibraryManagment.Entity;
 using LibraryManagment.InterFace.IRepository.IUserRepo;
 using Microsoft.Data.SqlClient;
@@ -81,37 +80,6 @@ namespace LibraryManagment.Repository.UserRepository
 
                 return (int)result > 0;
             }
-        }
-
-        //find user with NIC
-        public async Task<UserResponseDTO> FindUserWithNic(string NIC)
-        {
-            UserResponseDTO userResponseDTO = null;
-            using (SqlConnection connection = new SqlConnection(_connectionString))
-            {
-                connection.Open();
-                string querry = "SELECT UserId,FirstName, LastName,NIC,Email,PhoneNumber FROM LibraryManagment.dbo.Users WHERE NIC = @NIC";
-                using (SqlCommand command = new SqlCommand (querry, connection))
-                {
-                    command.Parameters.AddWithValue("@NIC", NIC);
-                    using(SqlDataReader reader = command.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            userResponseDTO = new UserResponseDTO()
-                            {
-                                UserId = reader.GetGuid(0),
-                                FirstName = reader.GetString(1),
-                                LastName = reader.GetString(2),
-                                NIC = reader.GetString(3),
-                                Email = reader.GetString(4),
-                                PhoneNumber = reader.GetString(5),
-                            };
-                        }
-                    }
-                }
-            }
-            return userResponseDTO;
         }
     }
     

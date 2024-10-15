@@ -94,19 +94,5 @@ namespace LibraryManagment.Service.UserService
 
         }
 
-        //Find user using nic
-        public async Task<UserResponseDTO> FindUserWithNic(string NIC)
-        {
-            try
-            {
-            var response = await _userRepository.FindUserWithNic(NIC);
-            return response;
-
-            }catch  (Exception ex)
-            {
-                throw new Exception("Error");
-            }
-        }
-
     }
 }

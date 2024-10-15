@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="../UserHomePage/UserGrid.css"> -->
-    <link rel="stylesheet" href="../UserDashBoardPage/UserDashBoard.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Document</title>
 </head>
-<body class="body">
-  <nav class="navbar navbar-expand-lg">
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary">
     <div class="container-fluid">
-      <a class="navbar-brand" href=""><img src="./images/logo.jpg" class="logo"></a>
+      <a class="navbar-brand" >
+        
+          <img src="./images/logo1.png" alt="Binary Bookshelf Logo" width="50">
+          Binary Bookshelf
+      
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav ">
+          <a class="nav-link text-white fs-5 tex" aria-current="page" href="#">Home</a>
+          <a class="nav-link active text-warning fs-5 tex" href="#"> Dashboard</a>
+          <a class="nav-link text-white fs-5 tex" href="#">Profile</a>
+          <a class="nav-link text-white fs-5 text" href="#">Status</a>
+        
         </div>
       </div>
     </div>
   </nav>
-    <div class="row grid gap-3"  style="margin-left: 10%;">
-      <div class="card col-3 p-4" style="width: 18rem ;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-      <div class="card col-3 p-4 " style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-      <div class="card col-3 p-4" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-      <div class="card col-3 p-4" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-      
-    </div>
-   
-    
-   
-    <script src="../UserDashBoardPage/UserDashBoard.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+  <div class="table">
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+  <table class="table table-dark">
+    <h1 class="h1" style="font-family: 'Times New Roman' ; font-size:large;">Barrow Book Details</h1>
+    <thead>
+      <tr>
+        <td>Book Title</td>
+        <td>Author</td>
+        <td>Quantity</td>
+        <td>Barrow Date</td>
+        <td>Return Date</td>
+      </tr>
+    </thead>
+    <tbody class="table table-light">
+      <tr class="table-active">
+        <td>gjhksdf</td>
+        <td>gjhksdf</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  
+
+
+
+  <div class="col-sm-6 mb-3 mb-sm-0">
+
+  <table class="table table-dark">
+    <h1 class="h1" style="font-family: 'Times New Roman' ; font-size:large;">Request Book Details</h1>
+    <thead>
+      <tr>
+        <td>Book Title</td>
+        <td>Author</td>
+        <td>Genre</td>
+        <td>Puplication</td>
+       
+      </tr>
+    </thead>
+    <tbody class="table table-light">
+      <tr class="table-active">
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
