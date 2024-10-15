@@ -67,5 +67,22 @@ namespace LibraryManagment.Controllers
             }
         }
 
+        //get user details with nic
+        [HttpGet("GetUserDetailsUsingID")]
+        public async Task<IActionResult> FindUserWithNic(string NIC)
+        {
+            try
+            {
+                var response = await _userService.FindUserWithNic(NIC);
+                return Ok(response);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+        }
+
     }
 }
