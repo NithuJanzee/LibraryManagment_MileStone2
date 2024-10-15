@@ -1,4 +1,5 @@
 ﻿using LibraryManagment.DTO.RequestDTO.BookTransactionRequest;
+using LibraryManagment.DTO.ResponseDTO.BookTransactionResponse;
 using LibraryManagment.Repository.BookTransaction;
 
 namespace LibraryManagment.InterFace.IService.IBookTransactionService
@@ -11,6 +12,7 @@ namespace LibraryManagment.InterFace.IService.IBookTransactionService
         Task<bool> CheckTheQuantity(Guid BookID);
         Task<bool> DecrementBookCopiesAsync(Guid bookId);
         Task<bool> IncreaseQuantity(Guid bookId);
+        Task<List<BookTransactionMainDTO>> GetUserTransaction(Guid Id);
 
     }
 }

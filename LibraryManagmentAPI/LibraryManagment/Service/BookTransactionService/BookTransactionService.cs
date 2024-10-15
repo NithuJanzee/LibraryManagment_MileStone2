@@ -1,4 +1,5 @@
 ﻿using LibraryManagment.DTO.RequestDTO.BookTransactionRequest;
+using LibraryManagment.DTO.ResponseDTO.BookTransactionResponse;
 using LibraryManagment.InterFace.IRepository.IBookTransactionRepo;
 using LibraryManagment.InterFace.IService.IBookTransactionService;
 using System.Text.RegularExpressions;
@@ -98,6 +99,17 @@ namespace LibraryManagment.Service.BookTransactionService
 
             // Decrement the copies by 1
             return await _bookTransactionRepository.IncreaseQuantity(bookId);
+        }
+
+        //get transaction details by user id
+        public async Task<List<BookTransactionMainDTO>> GetUserTransaction(Guid Id)
+        {
+            var response = await _bookTransactionRepository.GetUserTransaction(Id);
+            if(response == null)
+            {
+                throw new Exception("Error");
+            }
+            return response;
         }
     }
     

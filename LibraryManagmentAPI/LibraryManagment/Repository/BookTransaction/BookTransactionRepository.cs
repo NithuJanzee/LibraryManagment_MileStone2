@@ -4,6 +4,7 @@ using Microsoft.Data.SqlClient;
 using LibraryManagment.Entity;
 using System.Transactions;
 using System.Net;
+using LibraryManagment.DTO.ResponseDTO.BookTransactionResponse;
 
 
 namespace LibraryManagment.Repository.BookTransaction
@@ -160,8 +161,39 @@ namespace LibraryManagment.Repository.BookTransaction
                 return rowsAffected > 0;
             }
         }
+
+        //Get Paticual user from tansaction
+        public async Task<List<BookTransactionMainDTO>> GetUserTransaction(Guid Id)
+        {
+            List<BookTransactionMainDTO> MainDTOs = new List<BookTransactionMainDTO>();
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync(); 
+                string query = "SELECT Id, UserId, BookId, Status, LendingDate, ReturnDate FROM LibraryManagment.dbo.BookTransactions WHERE UserId = @userID";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@userID", Id);
+                    using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync()) 
+                        {
+                            MainDTOs.Add(new BookTransactionMainDTO()
+                            {
+                                UserId = reader.GetGuid(1),
+                                BookId = reader.GetGuid(2), 
+                                Status = reader.GetString(3),
+                                LendingDate = reader.IsDBNull(4) ? (DateTime?)null : reader.GetDateTime(4), 
+                                ReturnDate = reader.IsDBNull(5) ? (DateTime?)null : reader.GetDateTime(5) 
+                            });
+                        }
+                    }
+                }
+            }
+            return MainDTOs;
+        }
+
     }
-     
+
 }
     
 

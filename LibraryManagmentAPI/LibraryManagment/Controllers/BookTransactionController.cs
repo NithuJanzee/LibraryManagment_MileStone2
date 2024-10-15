@@ -1,4 +1,5 @@
 ﻿using LibraryManagment.DTO.RequestDTO.BookTransactionRequest;
+using LibraryManagment.DTO.ResponseDTO.BookTransactionResponse;
 using LibraryManagment.InterFace.IService.IBookTransactionService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -97,6 +98,14 @@ namespace LibraryManagment.Controllers
             {
                 return NotFound("some error found");
             }
+        }
+
+        //get transaction details with id
+        [HttpGet("TransactionDetails")]
+        public async Task<IActionResult>GetUserTransaction(Guid ID)
+        {
+            var data = await _bookTransactionService.GetUserTransaction(ID);
+            return Ok(data);    
         }
     }
 }

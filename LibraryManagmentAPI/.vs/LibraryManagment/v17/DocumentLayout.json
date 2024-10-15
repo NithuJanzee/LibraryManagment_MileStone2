@@ -3,56 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\controllers\\booktransactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\controllers\\booktransactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\interface\\iservice\\iuserserv\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\interface\\iservice\\iuserserv\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\interface\\iservice\\ibooktransactionservice\\ibooktransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\interface\\iservice\\ibooktransactionservice\\ibooktransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\service\\userservice\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\service\\userservice\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\service\\booktransactionservice\\booktransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\service\\booktransactionservice\\booktransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\interface\\irepository\\iuserrepo\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\interface\\irepository\\iuserrepo\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\interface\\irepository\\ibooktransactionrepo\\ibooktransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\interface\\irepository\\ibooktransactionrepo\\ibooktransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\repository\\userrepository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\repository\\userrepository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\repository\\booktransaction\\booktransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\repository\\booktransaction\\booktransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\repository\\bookrepository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\repository\\bookrepository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\entity\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\entity\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\service\\bookservice\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\service\\bookservice\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\dto\\responsedto\\bookresponsedto\\bookresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\dto\\responsedto\\bookresponsedto\\bookresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\interface\\iservice\\ibookservice\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\interface\\iservice\\ibookservice\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\interface\\irepository\\ibookrepository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\interface\\irepository\\ibookrepository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|c:\\users\\ut01268\\desktop\\new git\\librarymanagment_milestone2\\librarymanagmentapi\\librarymanagment\\dto\\responsedto\\booktransactionresponse\\booktransactionmaindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEA58E7D-5E80-4CE5-90A8-EFE3697F1AC7}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\dto\\responsedto\\booktransactionresponse\\booktransactionmaindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,159 +39,75 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\UserController.cs",
-              "RelativeToolTip": "LibraryManagment\\Controllers\\UserController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAADwv1QAAAAJAAAA",
+              "Title": "BookTransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\BookTransactionController.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\Controllers\\BookTransactionController.cs",
+              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\BookTransactionController.cs",
+              "RelativeToolTip": "LibraryManagment\\Controllers\\BookTransactionController.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAmwGAAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:20:15.825Z",
+              "WhenOpened": "2024-10-15T10:01:27.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IService\\IUserServ\\IUserService.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\InterFace\\IService\\IUserServ\\IUserService.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IService\\IUserServ\\IUserService.cs",
-              "RelativeToolTip": "LibraryManagment\\InterFace\\IService\\IUserServ\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA6AAAA",
+              "Title": "IBookTransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IService\\IBookTransactionService\\IBookTransactionService.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\InterFace\\IService\\IBookTransactionService\\IBookTransactionService.cs",
+              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IService\\IBookTransactionService\\IBookTransactionService.cs",
+              "RelativeToolTip": "LibraryManagment\\InterFace\\IService\\IBookTransactionService\\IBookTransactionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:20:00.705Z"
+              "WhenOpened": "2024-10-15T10:01:14.395Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Service\\UserService\\UserService.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\Service\\UserService\\UserService.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Service\\UserService\\UserService.cs",
-              "RelativeToolTip": "LibraryManagment\\Service\\UserService\\UserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
+              "Title": "BookTransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Service\\BookTransactionService\\BookTransactionService.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\Service\\BookTransactionService\\BookTransactionService.cs",
+              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Service\\BookTransactionService\\BookTransactionService.cs",
+              "RelativeToolTip": "LibraryManagment\\Service\\BookTransactionService\\BookTransactionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:19:49.51Z"
+              "WhenOpened": "2024-10-15T09:59:01.598Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IRepository\\IUserRepo\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\InterFace\\IRepository\\IUserRepo\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IRepository\\IUserRepo\\IUserRepository.cs",
-              "RelativeToolTip": "LibraryManagment\\InterFace\\IRepository\\IUserRepo\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA6AAAA",
+              "Title": "IBookTransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IRepository\\IBookTransactionRepo\\IBookTransactionRepository.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\InterFace\\IRepository\\IBookTransactionRepo\\IBookTransactionRepository.cs",
+              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IRepository\\IBookTransactionRepo\\IBookTransactionRepository.cs",
+              "RelativeToolTip": "LibraryManagment\\InterFace\\IRepository\\IBookTransactionRepo\\IBookTransactionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:19:29.179Z"
+              "WhenOpened": "2024-10-15T09:58:48.724Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Repository\\UserRepository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\Repository\\UserRepository\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Repository\\UserRepository\\UserRepository.cs",
-              "RelativeToolTip": "LibraryManagment\\Repository\\UserRepository\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAxAAAA",
+              "Title": "BookTransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Repository\\BookTransaction\\BookTransactionRepository.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\Repository\\BookTransaction\\BookTransactionRepository.cs",
+              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Repository\\BookTransaction\\BookTransactionRepository.cs",
+              "RelativeToolTip": "LibraryManagment\\Repository\\BookTransaction\\BookTransactionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:19:00.483Z"
+              "WhenOpened": "2024-10-15T09:49:41.805Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\appsettings.json",
-              "RelativeDocumentMoniker": "LibraryManagment\\appsettings.json",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\appsettings.json",
-              "RelativeToolTip": "LibraryManagment\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-07T16:27:43.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Entity\\Book.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\Entity\\Book.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Entity\\Book.cs",
-              "RelativeToolTip": "LibraryManagment\\Entity\\Book.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAcAAAA",
+              "Title": "BookTransactionMainDTO.cs",
+              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\DTO\\ResponseDTO\\BookTransactionResponse\\BookTransactionMainDTO.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\DTO\\ResponseDTO\\BookTransactionResponse\\BookTransactionMainDTO.cs",
+              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\DTO\\ResponseDTO\\BookTransactionResponse\\BookTransactionMainDTO.cs",
+              "RelativeToolTip": "LibraryManagment\\DTO\\ResponseDTO\\BookTransactionResponse\\BookTransactionMainDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T11:36:54.825Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BookResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
-              "RelativeToolTip": "LibraryManagment\\DTO\\ResponseDTO\\BookResponseDto\\BookResponseDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T11:33:27.027Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\Controllers\\BookController.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Controllers\\BookController.cs",
-              "RelativeToolTip": "LibraryManagment\\Controllers\\BookController.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAIwE8AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T11:32:11.865Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IBookService.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IService\\IBookService\\IBookService.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\InterFace\\IService\\IBookService\\IBookService.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IService\\IBookService\\IBookService.cs",
-              "RelativeToolTip": "LibraryManagment\\InterFace\\IService\\IBookService\\IBookService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T11:31:44.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Service\\BookService\\BookService.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\Service\\BookService\\BookService.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Service\\BookService\\BookService.cs",
-              "RelativeToolTip": "LibraryManagment\\Service\\BookService\\BookService.cs",
-              "ViewState": "AQIAAIgAAAAAAAAAAAAcwK0AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T11:30:51.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IBookRepository.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IRepository\\IBookRepository\\IBookRepository.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\InterFace\\IRepository\\IBookRepository\\IBookRepository.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\InterFace\\IRepository\\IBookRepository\\IBookRepository.cs",
-              "RelativeToolTip": "LibraryManagment\\InterFace\\IRepository\\IBookRepository\\IBookRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T11:10:36.3Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookRepository.cs",
-              "DocumentMoniker": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
-              "ToolTip": "C:\\Users\\UT01268\\Desktop\\new git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
-              "RelativeToolTip": "LibraryManagment\\Repository\\BookRepository\\BookRepository.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAswLIAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T11:05:58.637Z"
+              "WhenOpened": "2024-10-15T09:45:59.593Z"
             }
           ]
         }
