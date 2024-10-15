@@ -2,7 +2,7 @@
     width: 100%;
  }
  .navbar {
-    background-color: #a6bbd1;
+    background-color: #343a40;
     width:100%;
     
   }
@@ -20,16 +20,6 @@
     text-align: center;
 
   }
-
-  .admin{
-    border-radius: 10px;
-    font-family: Lucida Handwriting;
-    font-weight: bolder;
-  }
-
-  .nav-item nav-link{
-    color: #ffffff;
-  }
   .mainh1{
     color: #febb69;
   }
@@ -44,7 +34,7 @@
   }
 
   .offcanvas-body .nav-link {
-    color: #ffffff;
+    color: #343a40;
     font-weight: 500;
     font-size: 1.1rem;
   }
@@ -76,12 +66,12 @@
 .card {
     border: 1px solid #e0e0e0;  
     border-radius: 8px;       
-    box-shadow: 0 4px 15px rgba(65, 60, 60, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;  
 }
 
 .card:hover {
-    box-shadow: 0 6px 20px rgba(82, 79, 79, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 #gridContent{
@@ -127,20 +117,4 @@
 }
 .Gmessage{
   color: green;
-}
-
-.modal{
-  background-color:transparent;
-
-}
-.modal-content{
-  background-color:#343a40;
-  border-radius: 30px;
-  color: #f5c04b;
-}
-.btn{
-  background-color: #f5c04b;
-}
-.form-control{
-  background-color:rgb(245, 245, 211);
 }

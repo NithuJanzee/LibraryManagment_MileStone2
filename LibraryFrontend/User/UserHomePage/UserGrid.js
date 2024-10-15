@@ -1,6 +1,13 @@
 const loggedUser = localStorage.getItem("loggedUSer");
 if (loggedUser) {
   document.addEventListener("DOMContentLoaded", async () => {
+    //print user name
+    const GetUserDetails = await fetch(`http://localhost:5000/api/User/GetUserDetailsUsingID?NIC=${loggedUser}`);
+    const UserDetails = await GetUserDetails.json();
+    const userName = document.querySelector('.username');
+    userName.innerHTML =`${UserDetails.firstName} ${UserDetails.lastName}` 
+
+
     // Update books
     const PrintBookData = async () => {
       const FetchAllBookData = await fetch(
@@ -50,45 +57,7 @@ if (loggedUser) {
       }
     };
 
-    // Dropdowns
-    const FilterDropGenre = async () => {
-      const FetchGenreName = await fetch(
-        `http://localhost:5000/api/GenreControler/GetAllGenre`
-      );
-      const GenreName = await FetchGenreName.json();
-      let genreTemplate = "";
-      GenreName.forEach((data) => {
-        genreTemplate += `<option value="${data.id}">${data.name}</option>`;
-      });
-      document.getElementById("genreSelect").innerHTML =
-        `<option selected>Choose...</option>` + genreTemplate;
-    };
-
-    const FilterDropPublication = async () => {
-      const FetchPublication = await fetch(
-        `http://localhost:5000/api/Publication/GetAllPublication`
-      );
-      const PublicationName = await FetchPublication.json();
-      let publicationTemplate = "";
-      PublicationName.forEach((data) => {
-        publicationTemplate += `<option value="${data.id}">${data.name}</option>`;
-      });
-      document.getElementById("publicationSelect").innerHTML =
-        `<option selected>Choose...</option>` + publicationTemplate;
-    };
-
-    const FilterDropAuthor = async () => {
-      const FetchAuthor = await fetch(
-        `http://localhost:5000/api/Aurthor/GetAllAuthor`
-      );
-      const AuthorName = await FetchAuthor.json();
-      let authorTemplate = "";
-      AuthorName.forEach((data) => {
-        authorTemplate += `<option value="${data.id}">${data.name}</option>`;
-      });
-      document.getElementById("authorSelect").innerHTML =
-        `<option selected>Choose...</option>` + authorTemplate;
-    };
+    
 
     // Model window work
     const openModelWindow = () => {
@@ -142,9 +111,8 @@ if (loggedUser) {
               const activeClass = index === 0 ? "active" : "";
               imageTemplate += `
                         <div class="carousel-item ${activeClass}">
-                            <img src="${imageUrl}" class="d-block w-100" alt="Book Cover ${
-                index + 1
-              }">
+                            <img src="${imageUrl}" class="d-block w-100" alt="Book Cover ${index + 1
+                }">
                         </div>`;
             });
             document.querySelector(".bookCoverShow").innerHTML = imageTemplate;
@@ -159,23 +127,37 @@ if (loggedUser) {
             ConformBtn.removeEventListener("click", handleConformClick);
             ConformBtn.addEventListener("click", handleConformClick);
 
-            //write a api to get the userid using nic number 
-            // post the userid and book id to request api and thats it 
+            //GET logged user info
+            const GetUserDetails = await fetch(`http://localhost:5000/api/User/GetUserDetailsUsingID?NIC=${loggedUser}`);
+            const UserDetails = await GetUserDetails.json();
             async function handleConformClick() {
-              console.log(bookDetails.id, loggedUser);
+              const req = {
+                userId: UserDetails.userId,
+                bookId: bookDetails.id
+              }
+              //post book request 
+              console.log(req);
+              const requestBook = await fetch(`http://localhost:5000/api/BookTransaction/RequestBook`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(req),
+
+              })
+
+              if (requestBook) {
+                window.location.reload()
+              }
             }
+
           }
         });
     };
 
     // Initial function calls
     PrintBookData();
-    FilterDropGenre();
-    FilterDropPublication();
-    FilterDropAuthor();
     openModelWindow();
   });
 } else {
   alert("please log in");
-  // add a model window and a button when click button it should go to the index.html
+
 }
