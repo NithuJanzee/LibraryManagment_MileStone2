@@ -28,25 +28,25 @@ namespace LibraryManagment.Service.BookTransactionService
         //Check ove due or not
         public async Task<bool> ChecBookOverDue(Guid transactionID)
         {
-         
-           var transaction = await _bookTransactionRepository.ChecBookOverDue(transactionID);
+
+            var transaction = await _bookTransactionRepository.ChecBookOverDue(transactionID);
 
             if (transaction == null)
             {
                 throw new KeyNotFoundException("Transaction not found.");
             }
 
-          
+
             if (!transaction.LendingDate.HasValue || !transaction.ReturnDate.HasValue)
             {
                 throw new InvalidOperationException("Lending or Return Date is not set.");
             }
 
-         
+
             var currentDate = DateTime.UtcNow;
             var returnDate = transaction.ReturnDate.Value;
 
-            
+
             return currentDate <= returnDate;
         }
 
@@ -76,7 +76,7 @@ namespace LibraryManagment.Service.BookTransactionService
 
             if (quantity.Value <= 0)
             {
-                return false; 
+                return false;
             }
 
             // Decrement the copies by 1
@@ -105,13 +105,41 @@ namespace LibraryManagment.Service.BookTransactionService
         public async Task<List<BookTransactionMainDTO>> GetUserTransaction(Guid Id)
         {
             var response = await _bookTransactionRepository.GetUserTransaction(Id);
-            if(response == null)
+            if (response == null)
             {
                 throw new Exception("Error");
             }
             return response;
         }
+
+        //get all requested data
+        public async Task<List<BookTransactionMainDTO>> GetAllRequestdData()
+        {
+            try
+            {
+                var response = await _bookTransactionRepository.GetAllPendingRequest();
+                return response;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error" + ex);
+            }
+        }
+
+        //get all GetAllLending
+        public async Task<List<BookTransactionMainDTO>> GetAllLending()
+        {
+            try
+            {
+                var response = await _bookTransactionRepository.GetAllLending();
+                return response;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error" + ex);
+            }
+        }
     }
-    
-    
 }
+    
+

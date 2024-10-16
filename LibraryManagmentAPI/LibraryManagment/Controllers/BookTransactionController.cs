@@ -107,5 +107,36 @@ namespace LibraryManagment.Controllers
             var data = await _bookTransactionService.GetUserTransaction(ID);
             return Ok(data);    
         }
+
+        //Get all Requested Data
+        [HttpGet("AllRequestedData")]
+        public async Task<IActionResult> GetAllRequestedData()
+        {
+            try
+            {
+            var data = await _bookTransactionService.GetAllRequestdData();
+            return Ok(data);
+
+            }catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        //Get all GetAllLending
+        [HttpGet("GetAllLending")]
+        public async Task<IActionResult> GetAllLending()
+        {
+            try
+            {
+                var data = await _bookTransactionService.GetAllLending();
+                return Ok(data);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

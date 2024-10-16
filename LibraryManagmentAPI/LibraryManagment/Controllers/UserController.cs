@@ -84,5 +84,19 @@ namespace LibraryManagment.Controllers
 
         }
 
+        //Get all Users
+        [HttpGet("GetAllUsers")]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            try
+            {
+                var data = await _userService.GetAllUsers();
+                return Ok(data);
+            }catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }
