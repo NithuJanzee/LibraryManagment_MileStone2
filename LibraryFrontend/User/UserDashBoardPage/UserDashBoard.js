@@ -3,12 +3,10 @@ if (loggedUser) {
     document.addEventListener('DOMContentLoaded', async () => {
         const GetUserDetails = await fetch(`http://localhost:5000/api/User/GetUserDetailsUsingID?NIC=${loggedUser}`);
         const userData = await GetUserDetails.json();
-        //  console.log(userData.userId);
 
         const GetRequestedData = async () => {
             const RequestedData = await fetch(`http://localhost:5000/api/BookTransaction/TransactionDetails?ID=${userData.userId}`);
-            const allData = await RequestedData.json();
-            console.log(allData);
+            const allData = await RequestedData.json();   
 
             let RequestedTable = '';
 
@@ -33,6 +31,36 @@ if (loggedUser) {
             }
             document.getElementById('requestedTableData').innerHTML = RequestedTable;
         }
+
+        const GetLendingData = async()=>{
+            const LendingData = await fetch (`http://localhost:5000/api/BookTransaction/GetLendingBooksByID?ID=${userData.userId}`)
+            const AllLendingData = await LendingData.json()
+            console.log(AllLendingData);
+
+            let LendingBookTemplate='';
+            for (const data of AllLendingData) {
+                const getBookDetail = await fetch(`http://localhost:5000/api/Book/GetById?id=${data.bookId}`);
+                const bookData = await getBookDetail.json();
+                console.log(bookData);
+
+                const authorName = await GetAuthor(bookData.authorId);
+                const GenreName = await GetGenre(bookData.genreId)
+                const lendingDate = new Date(data.lendingDate).toLocaleDateString('en-CA'); 
+                const DueDate = new Date(data.returnDate).toLocaleDateString('en-CA');
+
+                LendingBookTemplate+=` 
+                <tr class="table-active">
+                <td>${bookData.name}</td> 
+                <td>${authorName}</td> 
+                <td>${GenreName}</td> 
+                <td>${lendingDate}</td>
+                <td>${DueDate}</td> 
+              </tr>`
+            }
+            document.getElementById('lendingDataUppendimg').innerHTML = LendingBookTemplate;
+        }
+
+
         const GetAuthor = async (authorId) => {
             const AuthorData = await fetch(`http://localhost:5000/api/Aurthor/GetByID?Id=${authorId}`);
             const author = await AuthorData.json();
@@ -52,6 +80,7 @@ if (loggedUser) {
         }
 
         GetRequestedData();
+        GetLendingData();
     });
 } else {
     alert("some message");

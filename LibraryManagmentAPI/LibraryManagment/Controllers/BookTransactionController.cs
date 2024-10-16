@@ -138,5 +138,19 @@ namespace LibraryManagment.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        // GetLendingBooksByID
+        [HttpGet("GetLendingBooksByID")]
+        public async Task<IActionResult> GetLendingBooksByID(Guid ID)
+        {
+            try
+            {
+                var data = await _bookTransactionService.GetLendingBooksByID(ID);
+                return Ok(data);
+            }catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

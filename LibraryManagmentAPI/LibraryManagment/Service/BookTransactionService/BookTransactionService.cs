@@ -139,6 +139,19 @@ namespace LibraryManagment.Service.BookTransactionService
                 throw new Exception("Error" + ex);
             }
         }
+
+        //GetLendingBooksByID
+        public async Task<List<BookTransactionMainDTO>> GetLendingBooksByID(Guid ID)
+        {
+            try
+            {
+                var response = await _bookTransactionRepository.GetLendingBooksByID(ID);
+                return response;
+            }catch(Exception ex)
+            {
+                throw new Exception("error" + ex);
+            }
+        }
     }
 }
     

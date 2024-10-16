@@ -238,7 +238,9 @@ namespace LibraryManagment.Repository.BookTransaction
                                 TransactionId = reader.GetGuid(0),
                                 UserId = reader.GetGuid(1),
                                 BookId = reader.GetGuid(2),
-                                Status = reader.GetString(3)
+                                Status = reader.GetString(3),
+                                LendingDate = reader.IsDBNull(4) ? (DateTime?)null : reader.GetDateTime(4),
+                                ReturnDate = reader.IsDBNull(5) ? (DateTime?)null : reader.GetDateTime(5)
                             });
                         }
                     }
@@ -247,6 +249,35 @@ namespace LibraryManagment.Repository.BookTransaction
             return bookTransactionMainDTOs;
         }
 
+        //GetLendingBooksByID
+        public async Task<List<BookTransactionMainDTO>> GetLendingBooksByID(Guid Id)
+        {
+            List<BookTransactionMainDTO> MainDTOs = new List<BookTransactionMainDTO>();
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                string query = "SELECT Id, UserId, BookId, Status, LendingDate, ReturnDate FROM LibraryManagment.dbo.BookTransactions WHERE UserId = @userID AND Status = 'lending'";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@userID", Id);
+                    using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            MainDTOs.Add(new BookTransactionMainDTO()
+                            {
+                                UserId = reader.GetGuid(1),
+                                BookId = reader.GetGuid(2),
+                                Status = reader.GetString(3),
+                                LendingDate = reader.IsDBNull(4) ? (DateTime?)null : reader.GetDateTime(4),
+                                ReturnDate = reader.IsDBNull(5) ? (DateTime?)null : reader.GetDateTime(5)
+                            });
+                        }
+                    }
+                }
+            }
+            return MainDTOs;
+        }
     }
 
 }
