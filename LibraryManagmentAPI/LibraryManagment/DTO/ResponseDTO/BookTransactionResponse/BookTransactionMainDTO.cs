@@ -1,9 +1,12 @@
 ﻿using LibraryManagment.Entity;
+using System.ComponentModel.DataAnnotations;
 
 namespace LibraryManagment.DTO.ResponseDTO.BookTransactionResponse
 {
     public class BookTransactionMainDTO
     {
+        [Key]
+        public Guid TransactionId { get; set; }
         public Guid UserId { get; set; }
         public Guid BookId { get; set; }
 

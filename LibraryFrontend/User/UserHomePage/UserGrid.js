@@ -143,8 +143,13 @@ if (loggedUser) {
                 body: JSON.stringify(req),
 
               })
+              //Update History
+              const AddHistory = await fetch (`http://localhost:5000/api/History/UpdateRequestHistory?UserId=${UserDetails.userId}&BookId=${bookDetails.id}`,{
+                method: "POST",
+                headers: { "Content-Type": "application/json" }
+              })
 
-              if (requestBook) {
+              if (AddHistory) {
                 window.location.reload()
               }
             }

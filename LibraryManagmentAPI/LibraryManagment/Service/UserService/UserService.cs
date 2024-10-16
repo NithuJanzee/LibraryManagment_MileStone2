@@ -122,5 +122,20 @@ namespace LibraryManagment.Service.UserService
             }
         }
 
+        //Find user using Guid
+        public async Task<UserResponseDTO> FindUserGUID(Guid ID)
+        {
+            try
+            {
+                var response = await _userRepository.FindUserGUID(ID);
+                return response;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error");
+            }
+        }
+
     }
 }

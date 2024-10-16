@@ -207,6 +207,7 @@ namespace LibraryManagment.Repository.BookTransaction
                         {
                             bookTransactionMainDTOs.Add(new BookTransactionMainDTO()
                             {
+                                TransactionId = reader.GetGuid(0),
                                 UserId = reader.GetGuid(1),
                                 BookId = reader.GetGuid(2),
                                 Status = reader.GetString(3)
@@ -234,6 +235,7 @@ namespace LibraryManagment.Repository.BookTransaction
                         {
                             bookTransactionMainDTOs.Add(new BookTransactionMainDTO()
                             {
+                                TransactionId = reader.GetGuid(0),
                                 UserId = reader.GetGuid(1),
                                 BookId = reader.GetGuid(2),
                                 Status = reader.GetString(3)

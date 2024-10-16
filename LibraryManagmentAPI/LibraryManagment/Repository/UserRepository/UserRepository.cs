@@ -147,6 +147,38 @@ namespace LibraryManagment.Repository.UserRepository
             return users;
         }
 
+
+
+        //find user with GuidID
+        public async Task<UserResponseDTO> FindUserGUID(Guid ID)
+        {
+            UserResponseDTO userResponseDTO = null;
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                string querry = "SELECT UserId,FirstName, LastName,NIC,Email,PhoneNumber FROM LibraryManagment.dbo.Users WHERE UserId = @ID";
+                using (SqlCommand command = new SqlCommand(querry, connection))
+                {
+                    command.Parameters.AddWithValue("@ID", ID);
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            userResponseDTO = new UserResponseDTO()
+                            {
+                                UserId = reader.GetGuid(0),
+                                FirstName = reader.GetString(1),
+                                LastName = reader.GetString(2),
+                                NIC = reader.GetString(3),
+                                Email = reader.GetString(4),
+                                PhoneNumber = reader.GetString(5),
+                            };
+                        }
+                    }
+                }
+            }
+            return userResponseDTO;
+        }
     }
 
 }

@@ -98,5 +98,21 @@ namespace LibraryManagment.Controllers
             }
         }
 
+        //get user details with GUID
+        [HttpGet("UserDetailsGUID")]
+        public async Task<IActionResult> FindUserGUID(Guid ID)
+        {
+            try
+            {
+                var response = await _userService.FindUserGUID(ID);
+                return Ok(response);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+        }
     }
 }
