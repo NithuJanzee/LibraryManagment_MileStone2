@@ -15,5 +15,6 @@ namespace LibraryManagment.InterFace.IRepository.IBookTransactionRepo
         Task<List<BookTransactionMainDTO>> GetUserTransaction(Guid Id);
         Task<List<BookTransactionMainDTO>> GetAllPendingRequest();
         Task<List<BookTransactionMainDTO>> GetAllLending();
+        Task<List<BookTransactionMainDTO>> GetLendingBooksByID(Guid Id);
     }
 }

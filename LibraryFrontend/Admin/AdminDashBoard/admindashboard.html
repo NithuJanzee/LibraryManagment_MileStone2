@@ -11,7 +11,7 @@
     <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid">
             <a class="navbar-brand text text-warning">
-                <img src="/LibraryFrontend/Admin/images/logo1.png" alt="Binary Bookshelf Logo" width="50">
+                <img src="../images/logo1.png" alt="Binary Bookshelf Logo" width="50">
                 Binary Bookshelf
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
                     <div class="card-body">
                         <h5>Total Books</h5>
                         <p id="totalBooks">0</p>
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookListModal">Show</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookListModal" id="Show1">Show1</button>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     <div class="card-body">
                         <h5>Total Users</h5>
                         <p id="totalUsers">0</p>
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#userListModal">Show</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#userListModal" id="Show2">Show2</button>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                     <div class="card-body">
                         <h5>Total Pending Request</h5>
                         <p id="totalBorrowedBooks">0</p>
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#pendingListModal">Show</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#pendingListModal">Show3</button>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                     <div class="card-body">
                         <h5>Total Lending Books</h5>
                         <p id="totalLendingBooks">0</p>
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#lendingListModal">Show</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#lendingListModal" id="Show4">Show4</button>
                     </div>
                 </div>
             </div>
@@ -222,7 +222,7 @@
 </div>
 
 
-    <!-- Book List Modal -->
+    <!-- Total Book Model -->
     <div class="modal fade" id="bookListModal" tabindex="-1" aria-labelledby="bookListModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content text-white">
@@ -237,65 +237,53 @@
                                 <th>Book Title</th>
                                 <th>Author</th>
                                 <th>Genre</th>
-                                <th>Publish Date</th>
+                                <th>Publication</th>
                                 <th>Quantity</th>
                             </tr>
                         </thead>
-                        <tbody id="bookListBody">
+                        <tbody id="AllbookListBody">
                             <!-- Sample Data -->
-                            <tr>
-                                <td>The Great Gatsby</td>
-                                <td>F. Scott Fitzgerald</td>
-                                <td>Fiction</td>
-                                <td>1925-04-10</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>1984</td>
-                                <td>George Orwell</td>
-                                <td>Dystopian</td>
-                                <td>1949-06-08</td>
-                                <td>8</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
-<!-- userlistmodel window -->
-    <div class="modal fade" id="userListModal" tabindex="-1" aria-labelledby="userListModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-white">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="userListModalLabel">Book List</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <table class="table table-dark">
-                        <thead>
-                            <tr>
-                                <th>FirstName</th>
-                                <th>LastName</th>
-                                <th>NIC</th>
-                                <th>Email</th>
-                                <th>Phone Number</th>
-                            </tr>
-                        </thead>
-                        <tbody id="userListBody">
-                            <!-- Sample Data -->
-                            <tr>
-                               
-                            </tr>
-                            <tr>
-                              
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+
+<!-- All Users window -->
+<div class="modal fade" id="userListModal" tabindex="-1" aria-labelledby="userListModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Added modal-lg class for larger modal -->
+        <div class="modal-content text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="userListModalLabel">Book List</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-dark table-striped"> <!-- Added table-striped for better readability -->
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>NIC</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                        </tr>
+                    </thead>
+                    <tbody id="AlluserListBody">
+                        <!-- Sample Data -->
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>123456789V</td>
+                            <td>john.doe@example.com</td>
+                            <td>+1 234-567-890</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
+</div>
 
 
 
@@ -332,9 +320,9 @@
 
 
 
-    <!-- lendinglist model -->
+    <!-- Lended book Model window -->
     <div class="modal fade" id="lendingListModal" tabindex="-1" aria-labelledby="lendingListModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered  modal-lg">
             <div class="modal-content text-white">
                 <div class="modal-header">
                     <h5 class="modal-title" id="lendingListModalLabel">Book List</h5>
@@ -344,16 +332,19 @@
                     <table class="table table-dark">
                         <thead>
                             <tr>
-                               
                                 <th>Book Title</th>
-                            
-                                <th>Barrow Date</th>
-                                <th>Return Date</th>
+                                <th>User Name</th>
+                                <th>Lending Date</th>
+                                <th>Due Date</th>
                             </tr>
                         </thead>
-                        <tbody id="lendingListBody">
-                            <!-- Sample Data -->
-                        
+                        <tbody id="AlllendingListBody">
+                            <tr>
+                                <td>The Great Gatsby</td>
+                                <td>John Doe</td>
+                                <td>2024-10-01</td>
+                                <td>2024-10-15</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
