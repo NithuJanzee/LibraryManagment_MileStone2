@@ -9,5 +9,6 @@ namespace LibraryManagment.InterFace.IService.IUserServ
         Task<bool> LoginUserAsync(string NIC, string password);
         Task<bool> UserLogin(UserLoginDTO userLogin);
         Task<UserResponseDTO> FindUserWithNic(string NIC);
+        Task<List<UserResponseDTO>> GetAllUsers();
     }
 }

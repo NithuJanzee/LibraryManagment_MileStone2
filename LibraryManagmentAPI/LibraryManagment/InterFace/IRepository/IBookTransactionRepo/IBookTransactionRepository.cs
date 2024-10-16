@@ -13,5 +13,7 @@ namespace LibraryManagment.InterFace.IRepository.IBookTransactionRepo
         Task<bool> DecrementCopiesAsync(Guid bookId);
         Task<bool> IncreaseQuantity(Guid bookId);
         Task<List<BookTransactionMainDTO>> GetUserTransaction(Guid Id);
+        Task<List<BookTransactionMainDTO>> GetAllPendingRequest();
+        Task<List<BookTransactionMainDTO>> GetAllLending();
     }
 }

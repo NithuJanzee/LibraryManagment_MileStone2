@@ -114,6 +114,39 @@ namespace LibraryManagment.Repository.UserRepository
             }
             return userResponseDTO;
         }
+
+        //get all users
+        public async Task<List<UserResponseDTO>> GetAllUsers()
+        {
+            List<UserResponseDTO> users = new List<UserResponseDTO>();
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                string query = "SELECT UserId, FirstName, LastName, NIC, Email, PhoneNumber FROM Users"; 
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataReader reader = await command.ExecuteReaderAsync()) 
+                    {
+                        while (await reader.ReadAsync()) 
+                        {
+                            users.Add(new UserResponseDTO()
+                            {
+                                UserId = reader.GetGuid(0),        
+                                FirstName = reader.GetString(1),   
+                                LastName = reader.GetString(2),     
+                                NIC = reader.GetString(3),         
+                                Email = reader.GetString(4),        
+                                PhoneNumber = reader.GetString(5)   
+                            });
+                        }
+                    }
+                }
+            }
+
+            return users;
+        }
+
     }
-    
+
 }

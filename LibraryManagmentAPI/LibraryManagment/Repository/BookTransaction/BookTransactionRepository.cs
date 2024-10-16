@@ -169,7 +169,7 @@ namespace LibraryManagment.Repository.BookTransaction
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 await connection.OpenAsync(); 
-                string query = "SELECT Id, UserId, BookId, Status, LendingDate, ReturnDate FROM LibraryManagment.dbo.BookTransactions WHERE UserId = @userID";
+                string query = "SELECT Id, UserId, BookId, Status, LendingDate, ReturnDate FROM LibraryManagment.dbo.BookTransactions WHERE UserId = @userID AND Status = 'Requested'";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@userID", Id);
@@ -190,6 +190,59 @@ namespace LibraryManagment.Repository.BookTransaction
                 }
             }
             return MainDTOs;
+        }
+        //Get all Requeted data
+        public async Task<List<BookTransactionMainDTO>> GetAllPendingRequest()
+        {
+            List<BookTransactionMainDTO> bookTransactionMainDTOs = new List<BookTransactionMainDTO>();
+            using(SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                string querry = "SELECT Id,UserId,BookId,Status,LendingDate ,ReturnDate FROM LibraryManagment.dbo.BookTransactions WHERE Status = 'Requested'";
+                using (SqlCommand command = new SqlCommand(querry, connection))
+                {
+                    using(SqlDataReader  reader = await command.ExecuteReaderAsync())
+                    {
+                        while(await reader.ReadAsync())
+                        {
+                            bookTransactionMainDTOs.Add(new BookTransactionMainDTO()
+                            {
+                                UserId = reader.GetGuid(1),
+                                BookId = reader.GetGuid(2),
+                                Status = reader.GetString(3)
+                            });
+                        }
+                    }
+                }
+            }
+            return bookTransactionMainDTOs;
+        }
+
+        //Get all lending data
+        public async Task<List<BookTransactionMainDTO>> GetAllLending()
+        {
+            List<BookTransactionMainDTO> bookTransactionMainDTOs = new List<BookTransactionMainDTO>();
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                string querry = "SELECT Id,UserId,BookId,Status,LendingDate ,ReturnDate FROM LibraryManagment.dbo.BookTransactions WHERE Status = 'lending'";
+                using (SqlCommand command = new SqlCommand(querry, connection))
+                {
+                    using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            bookTransactionMainDTOs.Add(new BookTransactionMainDTO()
+                            {
+                                UserId = reader.GetGuid(1),
+                                BookId = reader.GetGuid(2),
+                                Status = reader.GetString(3)
+                            });
+                        }
+                    }
+                }
+            }
+            return bookTransactionMainDTOs;
         }
 
     }

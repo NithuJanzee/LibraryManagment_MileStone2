@@ -108,6 +108,19 @@ namespace LibraryManagment.Service.UserService
                 throw new Exception("Error");
             }
         }
+        //get all users
+        public async Task<List<UserResponseDTO>> GetAllUsers()
+        {
+            try
+            {
+                var allusers = await _userRepository.GetAllUsers();
+                return allusers;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Error");
+            }
+        }
 
     }
 }
