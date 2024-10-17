@@ -59,8 +59,8 @@
             <div class="col-md-3">
                 <div class="card bg-secondary text-white">
                     <div class="card-body">
-                        <h5>Total Pending Request</h5>
-                        <p id="totalBorrowedBooks">0</p>
+                        <h5>Total collection</h5>
+                        <p id="TotalCollection">0</p>
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#pendingListModal">Show3</button>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                 <div class="modal-body">
                     <button class="btn btn-custom mb-2" data-bs-toggle="modal" data-bs-target="#addBookModal">Add Book</button>
                     <button class="btn btn-custom mb-2" data-bs-toggle="modal" data-bs-target="#addAuthorModal">Add Author</button>
-                    <button class="btn btn-custom mb-2" data-bs-toggle="modal" data-bs-target="#addPublishDateModal">Add Publish Date</button>
+                    <button class="btn btn-custom mb-2" data-bs-toggle="modal" data-bs-target="#addPublishDateModal">Add Publication</button>
                     <button class="btn btn-custom mb-2" data-bs-toggle="modal" data-bs-target="#addGenreModal">Add Genre</button>
                 </div>
             </div>
@@ -384,38 +384,44 @@
                             <label for="quantity" class="form-label">Quantity</label>
                             <input type="number" class="form-control" id="quantity" required>
                         </div>
-                        <div class="mb-3">
-                            <label for="authorSelect" class="form-label">Author</label>
-                            <select class="form-select" id="authorSelect" required>
-                                <option selected disabled value="">Select Author</option>
-                                <option>Author 1</option>
-                                <option>Author 2</option>
-                                <option>Author 3</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="genre" class="form-label">Genre</label>
-                            <select class="form-select" id="genre" required>
-                                <option selected disabled value="">Select Genre</option>
-                                <option>Genre 1</option>
-                                <option>Genre 2</option>
-                                <option>Genre 3</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="publishDate" class="form-label">Publish Date</label>
-                            <select class="form-select" id="publishDate" required>  
-                                <option selected disabled value="">Select Publish Date</option>
-                                <option>Date 1</option>
-                                <option>Date 2</option>
-                                <option>Date 3</option>
-                            </select>
-                        </div>
+                        <div class="dropDowns">
+
+                            <!-- dropDowns Start -->
+                            <div class="mb-3">
+                                <label for="authorSelect" class="form-label">Author</label>
+                                <select class="form-select" id="authorSelect" required>
+                                    <option selected disabled value="">Select Author</option>
+                                    <option>Author 1</option>
+                                    <option>Author 2</option>
+                                    <option>Author 3</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="genre" class="form-label">Genre</label>
+                                <select class="form-select" id="genre" required>
+                                    <option selected disabled value="">Select Genre</option>
+                                    <option>Genre 1</option>
+                                    <option>Genre 2</option>
+                                    <option>Genre 3</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="publishDate" class="form-label">Publish Date</label>
+                                <select class="form-select" id="publishDate" required>  
+                                    <option selected disabled value="">Select Publish Date</option>
+                                    <option>Date 1</option>
+                                    <option>Date 2</option>
+                                    <option>Date 3</option>
+                                </select>
+                            </div>
+
+                            <!-- dropdown end -->
+                        </div>                       
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-custom">Save Book</button>
+                    <button type="button" class="btn btn-custom">Save Book1</button>
                 </div>
             </div>
         </div>
@@ -443,7 +449,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-custom">Save Author</button>
+                    <button type="button" class="btn btn-custom" id="AddAuthorBtn">Save Author</button>
                 </div>
             </div>
         </div>
@@ -460,14 +466,14 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="newPublishDate" class="form-label">Publishcation</label>
-                            <input type="date" class="form-control" id="newPublishDate" required>
+                            <label for="newPublishDate" class="form-label">Publication</label>
+                            <input type="text" class="form-control" id="newPublication" required>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-custom">Save Publish Date</button>
+                    <button type="button" class="btn btn-custom" id="AddPublicationBtn">Save Publication</button>
                 </div>
             </div>
         </div>
@@ -491,7 +497,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-custom">Save Genre</button>
+                    <button type="button" class="btn btn-custom" id="SaveGenreBtn">Save Genre</button>
                 </div>
             </div>
         </div>

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UT01268\\Desktop\\GIT 2\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\LibraryManagment.csproj": {}
+    "C:\\Users\\User\\Desktop\\GIT 2 lap edit 17.10\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\LibraryManagment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UT01268\\Desktop\\GIT 2\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\LibraryManagment.csproj": {
+    "C:\\Users\\User\\Desktop\\GIT 2 lap edit 17.10\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\LibraryManagment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UT01268\\Desktop\\GIT 2\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\LibraryManagment.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\GIT 2 lap edit 17.10\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\LibraryManagment.csproj",
         "projectName": "LibraryManagment",
-        "projectPath": "C:\\Users\\UT01268\\Desktop\\GIT 2\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\LibraryManagment.csproj",
-        "packagesPath": "C:\\Users\\UT01268\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UT01268\\Desktop\\GIT 2\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\GIT 2 lap edit 17.10\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\LibraryManagment.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\GIT 2 lap edit 17.10\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\UT01268\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
