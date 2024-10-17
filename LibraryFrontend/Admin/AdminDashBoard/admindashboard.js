@@ -311,16 +311,35 @@ document.addEventListener("DOMContentLoaded", async (event) => {
         `http://localhost:5000/api/Aurthor/GetAllAuthor`
       );
       const AllAuthor = await AllAuthorData.json();
-      console.log(AllAuthor)
       let AuthorTemplate = '';
       AllAuthor.forEach((data)=>{
         AuthorTemplate+=`
-        <option value="${data.name}">${data.name}</option>
+        <option value="${data.id}">${data.name}</option>
         `
       })
       document.getElementById('authorSelect').innerHTML = '<option selected disabled value="">Select Author</option>' + AuthorTemplate;
 
       //add genre drop down
+      const allGenreData = await fetch(`http://localhost:5000/api/GenreControler/GetAllGenre`);
+      const allGenre = await allGenreData.json();
+      let GenreTemplate = ``
+      allGenre.forEach((data)=>{
+        GenreTemplate+=`
+        <option value="${data.id}">${data.name}</option>
+        `
+      })
+      document.getElementById('genre').innerHTML =` <option selected disabled value="">Select Genre</option>` + GenreTemplate
+
+      //Add publication drop down
+      const AllPublicationData = await fetch(`http://localhost:5000/api/Publication/GetAllPublication`);
+      const AllPublication = await AllPublicationData.json()
+      let PublicationTemplate = '';
+      AllPublication.forEach((data)=>{
+        PublicationTemplate += `
+        <option value="${data.id}">${data.name}</option>
+        `
+      })
+      document.getElementById('publishPublication').innerHTML =`<option selected disabled value="">Select Publish Date</option>` + PublicationTemplate
     };
     SetBookModel()
 };
