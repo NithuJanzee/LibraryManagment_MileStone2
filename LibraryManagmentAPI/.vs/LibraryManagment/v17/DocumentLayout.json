@@ -43,8 +43,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T08:22:14.867Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -56,8 +55,7 @@
               "RelativeToolTip": "LibraryManagment\\Controllers\\HistoryController.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAmwEsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T08:21:18.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T08:21:18.905Z"
             },
             {
               "$type": "Document",
@@ -69,8 +67,7 @@
               "RelativeToolTip": "LibraryManagment\\Service\\HistoryService\\HistoryService.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAowC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T08:19:43.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T08:19:43.122Z"
             },
             {
               "$type": "Document",
@@ -82,8 +79,7 @@
               "RelativeToolTip": "LibraryManagment\\InterFace\\IRepository\\IHistory\\IHistoryRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T08:19:25.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T08:19:25.656Z"
             },
             {
               "$type": "Document",
@@ -93,7 +89,7 @@
               "RelativeDocumentMoniker": "LibraryManagment\\Repository\\HistoryRepository\\HistoryRepository.cs",
               "ToolTip": "C:\\Users\\UT01268\\Desktop\\git\\LibraryManagment_MileStone2\\LibraryManagmentAPI\\LibraryManagment\\Repository\\HistoryRepository\\HistoryRepository.cs",
               "RelativeToolTip": "LibraryManagment\\Repository\\HistoryRepository\\HistoryRepository.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAwwHcAAAAsAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAqwHAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T08:12:37.978Z",
               "EditorCaption": ""
