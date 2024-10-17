@@ -8,6 +8,8 @@ namespace LibraryManagment.InterFace.IRepository.IHistory
         Task<History> UpdateLendingStatus(Guid userId, Guid bookId);
         Task<bool> UpdateReturnedDate(Guid userId, Guid bookId, string status);
         //Task<bool> UpdateReturnedDate(Guid userId, Guid bookId, string status);
+        Task<List<History>> GetAll();
+        Task<List<History>> GetByUserId(Guid Id);
 
     }
 }

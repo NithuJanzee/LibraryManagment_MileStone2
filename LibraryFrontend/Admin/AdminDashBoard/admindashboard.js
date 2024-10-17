@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     document.getElementById("totalLendingBooks").innerHTML = countLendBooks;
   };
 
-  //Lending request Table
+  //L    
   const LendingTable = async () => {
     const fetchAllLendingRequest = await fetch(
       `http://localhost:5000/api/BookTransaction/AllRequestedData`
@@ -470,10 +470,48 @@ document.addEventListener("DOMContentLoaded", async (event) => {
       //end book return management
     };
 
+    //Reports model
+    const ReportsModel = ()=>{
+      const ReportBtn = document.getElementById('ManageReportBtn');
+      ReportBtn.addEventListener('click' , async()=>{
+        const GetAllReportData = await fetch (`http://localhost:5000/api/History/GetAll`);
+        const GetAllReport = await GetAllReportData.json();
+        console.log(GetAllReport)
+        
+        let ReportTemplate = '';
+        for (const data of GetAllReport) {
+          const GetUserData = await fetch(`http://localhost:5000/api/User/UserDetailsGUID?ID=${data.userId}`)
+          const User = await GetUserData.json()
+         
+          const GetBookData = await fetch(`http://localhost:5000/api/Book/GetById?id=${data.bookId}`)
+          const Book = await GetBookData.json()
+
+          const RequestDate = new Date(data.requestedDate).toLocaleDateString("en-CA");
+          const lendedDate = new Date(data.lendedDate).toLocaleDateString("en-CA");
+          const dueDate = new Date(data.dueDate).toLocaleDateString("en-CA");
+          const returnedDate = new Date(data.returnedDate).toLocaleDateString("en-CA");
+          
+          ReportTemplate+=` 
+                            <tr>
+                                <td>${User.firstName} ${User.lastName}</td>
+                                <td>${Book.name}</td>
+                                <td>${RequestDate}</td>
+                                <td>${lendedDate}</td>
+                                <td>${dueDate}</td>
+                                <td>${returnedDate}</td>
+                                <td>${data.status}</td>
+                            </tr>
+          `
+        } 
+        document.getElementById('reportsListBody').innerHTML = ReportTemplate;
+      })
+    }
+
 
     SetBookModel();
     AddNewBook();
     BookReturnManagement()
+    ReportsModel()
   };
 
   function openManageBookModal() {

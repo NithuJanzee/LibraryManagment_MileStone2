@@ -122,5 +122,79 @@ namespace LibraryManagment.Repository.HistoryRepository
             }
         }
 
+        //Get all 
+        public async Task<List<History>> GetAll()
+        {
+            List<History> historyList = new List<History>();
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                string query = "SELECT Id, UserId, BookId, Status, RequestedDate, LendedDate, DueDate, ReturnedDate FROM LibraryManagment.dbo.History;";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            History history = new History
+                            {
+                                Id = reader.GetGuid(0), 
+                                UserId = reader.GetGuid(1), 
+                                BookId = reader.GetGuid(2), 
+                                Status = reader.GetString(3), 
+                                RequestedDate = reader.GetDateTime(4),
+                                LendedDate = reader.IsDBNull(5) ? (DateTime?)null : reader.GetDateTime(5), 
+                                DueDate = reader.IsDBNull(6) ? (DateTime?)null : reader.GetDateTime(6), 
+                                ReturnedDate = reader.IsDBNull(7) ? (DateTime?)null : reader.GetDateTime(7)
+                            };
+
+                            historyList.Add(history);
+                        }
+                    }
+                }
+            }
+
+            return historyList;
+        }
+
+        //Get by user id
+        public async Task<List<History>> GetByUserId(Guid Id)
+        {
+            List<History> historyList = new List<History>();
+            using(SqlConnection connection = new SqlConnection (_connectionString))
+            {
+                connection.Open();
+                string querry = " SELECT Id, UserId, BookId, Status, RequestedDate, LendedDate, DueDate, ReturnedDate FROM LibraryManagment.dbo.History WHERE UserId = @UserId";
+                using(SqlCommand command = new SqlCommand(querry, connection))
+                {
+                    command.Parameters.AddWithValue("@UserId", Id);
+                    using(SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            History history = new History()
+                            {
+                                Id =reader.GetGuid(0),
+                                UserId = reader.GetGuid(1),
+                                BookId = reader.GetGuid(2),
+                                Status = reader.GetString(3),
+                                RequestedDate = reader.GetDateTime(4),
+                                LendedDate = reader.IsDBNull(5) ? (DateTime?)null : reader.GetDateTime(5),
+                                DueDate = reader.IsDBNull(6) ? (DateTime?)null : reader.GetDateTime(6),
+                                ReturnedDate = reader.IsDBNull(7) ? (DateTime?)null : reader.GetDateTime(7)
+                            };
+                            historyList.Add(history);
+                        }
+                    }
+                }
+            }
+            return historyList;
+
+        }
+
+
     }
 }
