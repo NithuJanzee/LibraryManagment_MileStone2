@@ -37,7 +37,7 @@
                         </li>
                     </ul>
 
-                    <button class="admin">ADMIN</button>
+                    <button class="admin" data-bs-toggle="modal" data-bs-target="#adminModal">ADMIN</button>
                 </div>
             </div>
         </div>
@@ -69,6 +69,37 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+
+
+    <!-- Admin Login Modal -->
+<div class="modal" id="adminModal" tabindex="-1" aria-labelledby="adminModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border border-light border border-5">
+            <div class="modal-header">
+                <h5 class="modal-title" id="adminModalLabel">Admin Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="nic" class="form-label">NIC</label>
+                        <input type="text" class="form-control input-style" id="nic" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control input-style" id="password" required>
+                    </div>
+                    <div class="mb-3" id="errorMessage" style="display: none; color: red;">
+                        <!-- Error message will be displayed here -->
+                    </div>
+                    <button type="submit" class="btn w-100">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <!-- Footer Section -->
     <footer class="text-white text-center py-4" style="background-color:darkgrey; margin-top: 30px;">
@@ -165,6 +196,36 @@
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form from submitting
+    
+        const nic = document.getElementById('nic').value;
+        const password = document.getElementById('password').value;
+        const errorMessage = document.getElementById('errorMessage');
+    
+        // Hardcoded array of admin credentials
+        const admins = [
+            { nic: '1111', password: 'admin1' },
+            { nic: '2222', password: 'admin2' },
+            { nic: '3333', password: 'admin3' }
+        ];
+    
+        // Validate NIC and password
+        const admin = admins.find(admin => admin.nic === nic && admin.password === password);
+    
+        if (admin) {
+            errorMessage.style.display = 'none';
+            window.location.href = '../Admin/AdminDashBoard/admindashboard.html';
+    
+     // Redirect to admin dashboard
+        } else {
+            errorMessage.style.display = 'block';
+            errorMessage.textContent = 'Invalid NIC number or password';
+        }
+    });
+    
+       </script>
    
     <script src="../User/js/bootstrap.min.js"></script>
     <script src="./index.js"></script>
