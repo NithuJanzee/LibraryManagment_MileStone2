@@ -487,9 +487,9 @@ document.addEventListener("DOMContentLoaded", async (event) => {
           const Book = await GetBookData.json()
 
           const RequestDate = new Date(data.requestedDate).toLocaleDateString("en-CA");
-          const lendedDate = new Date(data.lendedDate).toLocaleDateString("en-CA");
-          const dueDate = new Date(data.dueDate).toLocaleDateString("en-CA");
-          const returnedDate = new Date(data.returnedDate).toLocaleDateString("en-CA");
+          const lendedDate = data.lendedDate ? new Date(data.lendedDate).toLocaleDateString("en-CA") : "N/A";
+          const dueDate = data.dueDate ? new Date(data.dueDate).toLocaleDateString("en-CA") : "N/A";
+          const returnedDate = data.returnedDate ? new Date(data.returnedDate).toLocaleDateString("en-CA") : "N/A";
           
           ReportTemplate+=` 
                             <tr>
