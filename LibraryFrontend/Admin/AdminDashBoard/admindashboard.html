@@ -26,10 +26,10 @@
                         <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#manageBookModal">Manage Book</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#reportsModal">Reports</a>
+                        <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#returnsModal" id="ManageReturnBtn">Manage Return</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#returnsModal">Manage Return</a>
+                        <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#reportsModal">Reports</a>
                     </li>
                 </ul>
             </div>
@@ -153,31 +153,13 @@
                             <th>Book Title</th>
                             <th>Status</th>
                             <th>Request Date</th>
-                            <th>Lended Date</th>
+                            <th>Lend Date</th>
                             <th>Due Date</th>
                             <th>Returned Date</th>
                         </tr>
                     </thead>
                     <tbody id="reportsListBody">
-                        <!-- Sample Data -->
-                        <tr>
-                            <td>John Doe</td>
-                            <td>The Great Gatsby</td>
-                            <td>Approved</td>
-                            <td>2024-01-15</td>
-                            <td>2024-01-16</td>
-                            <td>2024-02-01</td>
-                            <td>2024-02-05</td>
-                        </tr>
-                        <tr>
-                            <td>Jane Smith</td>
-                            <td>1984</td>
-                            <td>Pending</td>
-                            <td>2024-01-18</td>
-                            <td></td>
-                            <td>2024-02-15</td>
-                            <td></td>
-                        </tr>
+        
                     </tbody>
                 </table>
             </div>
@@ -201,21 +183,21 @@
                         <tr>
                             <th>User Name</th>
                             <th>Book Title</th>
-                            <th>Lended Date</th>
+                            <th>Lend Date</th>
                             <th>Due Date</th>
                             <th>Status</th>
-
                         </tr>
                     </thead>
                     <tbody id="returnsListBody">
-                        <!-- Sample Data -->
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td><button type="button" class="btn btn-success">Success</button></td>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>The Great Gatsby</td>
+                            <td>2024-10-01</td>
+                            <td>2024-10-15</td>
+                            <td><button type="button" class="btn btn-success">Return</button></td>
+                        </tr>
                     </tbody>
-                </table>
+                </table>                
             </div>
         </div>
     </div>

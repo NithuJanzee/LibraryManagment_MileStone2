@@ -16,6 +16,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\01c2bfd4-1fba-436f-84fc-00ac6d36f785_Screenshot 2024-09-26 175240.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\02a62b41-69ef-451a-97a9-7ab77093025e_ktm-duke648ffacef182c.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/02a62b41-69ef-451a-97a9-7ab77093025e_ktm-duke648ffacef182c.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\02a62b41-69ef-451a-97a9-7ab77093025e_ktm-duke648ffacef182c.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\03f57063-9862-4169-b1d3-bb8c2172268e_Gemini_Generated_Image_29i0se29i0se29i0.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>LibraryManagment</SourceId>

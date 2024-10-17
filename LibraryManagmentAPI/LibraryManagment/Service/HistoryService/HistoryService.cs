@@ -44,5 +44,21 @@ namespace LibraryManagment.Service.HistoryService
 
             return history;  
         }
+
+
+        //update returnd
+        public async Task<bool> UpdateReturnedDate(Guid userId, Guid bookId, string status)
+        {
+            try
+            {
+                return await _historyRepository.UpdateReturnedDate(userId, bookId, status);
+            }
+            catch (Exception ex)
+            {
+                
+                Console.WriteLine($"Error updating return date: {ex.Message}");
+                throw;
+            }
+        }
     }
 }

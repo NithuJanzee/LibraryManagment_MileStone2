@@ -6,5 +6,6 @@ namespace LibraryManagment.InterFace.IService.IHistory
     {
         Task<History> HistoryRequested(Guid UserID, Guid BookId);
         Task<History> UpdateLendingStatus(Guid userId, Guid bookId);
+        Task<bool> UpdateReturnedDate(Guid userId, Guid bookId, string status);
     }
 }
