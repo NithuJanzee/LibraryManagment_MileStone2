@@ -43,8 +43,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T08:22:14.867Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -69,8 +68,7 @@
               "RelativeToolTip": "LibraryManagment\\Service\\HistoryService\\HistoryService.cs",
               "ViewState": "AQIAADsAAAAAAAAAAAAIwEwAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T08:19:43.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T08:19:43.122Z"
             },
             {
               "$type": "Document",
@@ -82,8 +80,7 @@
               "RelativeToolTip": "LibraryManagment\\InterFace\\IRepository\\IHistory\\IHistoryRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T08:19:25.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T08:19:25.656Z"
             },
             {
               "$type": "Document",
@@ -95,8 +92,7 @@
               "RelativeToolTip": "LibraryManagment\\Repository\\HistoryRepository\\HistoryRepository.cs",
               "ViewState": "AQIAAJMAAAAAAAAAAAAAwKMAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T08:12:37.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T08:12:37.978Z"
             }
           ]
         }
