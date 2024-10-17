@@ -152,20 +152,5 @@ namespace LibraryManagment.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
-        //Delete Transaction
-        [HttpDelete("ReturnDelete")]
-        public async Task<IActionResult> ReturnDelete(Guid ID)
-        {
-            try
-            {
-                var data = await _bookTransactionService.ReturnDelete(ID);
-                return Ok(data);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
     }
 }

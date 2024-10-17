@@ -3,156 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
+    <title>Library</title>
+
+
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../UserHomePage/UserGrid.css">
     <link rel="stylesheet" href="../UserProfilePage/UserProfile.css">
-    <style>
-        .card {
-            background-color: #343a40; 
-            color: #f5c04b; 
-        }
-        .form-control {
-            color: #495057; 
-        }
-        .form-control:focus {
-            background-color: #495057; 
-            color: #f5c04b; 
-            border-color: #f5c04b; 
-        }
-        .btn-primary, .btn-success {
-            background-color: #f5c04b; 
-            border-color: #f5c04b; 
-        }
-        .btn-primary:hover, .btn-success:hover {
-            background-color: #e6b23f; 
-            border-color: #e6b23f; 
-        }
-    </style>
 </head>
 <body>
    
     <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid">
-            <a class="navbar-brand text-warning">
-                <img src="/LibraryFrontend/User/UserDashBoardPage/images/logo1.png" alt="Binary Bookshelf Logo" width="50">
-                Binary Bookshelf
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link text-white fs-5" href="../UserHomePage/UserGrid.html">Home</a>
-                    <a class="nav-link text-white fs-5" href="../UserDashBoardPage/UserDashBoard.html">Dashboard</a>
-                    <a class="nav-link active text-warning fs-5" href="../UserProfilePage/UserProfile.html">Profile</a>
-                    <a class="nav-link text-white fs-5" href="../UserstatusPage/userstatus.html">Status</a>
-                </div>
+          <a class="navbar-brand text-warning" >
+            
+              <img src="/LibraryFrontend/User/UserDashBoardPage/images/logo1.png" alt="Binary Bookshelf Logo" width="50">
+              Binary Bookshelf
+          
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+              <a class="nav-link text-white fs-5 tex" aria-current="page" href="../UserHomePage/UserGrid.html">Home</a>
+              <a class="nav-link text-white fs-5 tex" href="../UserDashBoardPage/UserDashBoard.html"> Dashboard</a>
+              <a class="nav-link active text-warning fs-5 tex" href="../UserProfilePage/UserProfile.html">Profile</a>
+              <a class="nav-link text-white fs-5 text" href="../UserstatusPage/userstatus.html">Status</a>
+            
             </div>
-            <a href="/LibraryFrontend/Index/index.html"><button type="button" class="btn btn-outline-light">LOG OUT</button></a>
+          </div>
+          <a href="/LibraryFrontend/Index/index.html"><button type="button" class="btn btn-outline-light"  >LOG OUT</button>  </a>
         </div>
-    </nav>
-   
-    <div class="container mt-3">
-        <div class="card" style="width: 1000px;">
-            <div class="card-body">
-                <h1 class="text-center text-white">User Profile</h1>
-                <div class="mb-3">
-                    <label for="firstname" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstname" readonly>
-                </div>
-                <div class="mb-3">
-                    <label for="lastname" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastname" readonly>
-                </div>
-                <div class="mb-3">
-                    <label for="nic" class="form-label">User NIC</label>
-                    <input type="text" class="form-control" id="nic" readonly>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" readonly>
-                </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="phone" readonly>
-                </div>
-                <div class="d-flex d-grid gap-2 col-2 mx-auto  ">
-                    <button class="btn btn-info btn btn-warning " onclick="openUpdateProfileModal()">Edit Profile</button>
-                </div>
-            </div>
-        </div>
+      </nav>
+    
+    <div>
+      <div class="container">
+      
 
-        <!-- Update Profile Modal -->
-        <div class="modal fade" id="updateProfileModal" tabindex="-1" aria-labelledby="updateProfileModalLabel" aria-hidden="true">
-            <div class="modal-dialog ">
-                <div class="modal-content bg-secondary">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-white" id="updateProfileModalLabel">Update Profile</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-warning ">
-                        <form id="updateProfileForm">
-                            <div class="mb-3">
-                                <label for="updateFirstname" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="updateFirstname">
-                            </div>
-                            <div class="mb-3">
-                                <label for="updateLastname" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="updateLastname">
-                            </div>
-                            <div class="mb-3">
-                                <label for="updateNIC" class="form-label">User NIC</label>
-                                <input type="text" class="form-control" id="updateNIC" readonly>
-                            </div>
-                            <div class="mb-3">
-                                <label for="updateEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="updateEmail">
-                            </div>
-                            <div class="mb-3">
-                                <label for="updatePhone" class="form-label">Phone Number</label>
-                                <input type="tel" class="form-control" id="updatePhone">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-success" onclick="updateProfile()">Save Changes</button>
-                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    </div>
+        <section class="main" id="profile-container" >
+            <div class="row">
+                <div class="col">
+                    <section class="main-Profile">.
+                        
+                        <div class="heading">
+                            <h1>Personal</h1><h1>Information</h1>
+                        </div>
+                        <div class="profile-box">
+                            <form id="profile-form">
+                                <table>
+                                    <tr>
+                                        <td><label for="id">User Id</label></td>
+                                        <td><input type="text" id="id" name="id" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="fname">First Name</label></td>
+                                        <td><input type="text" id="fname" name="fname" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="lname">Last Name</label></td>
+                                        <td><input type="text" id="lname" name="lname" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="nic">NIC Number</label></td>
+                                        <td><input type="text" id="nic" name="nic" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="email">Email</label></td>
+                                        <td><input type="email" id="email" name="email" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="phone">Phone Number</label></td>
+                                        <td><input type="tel" id="phone" name="phone" disabled></td>
+                                    </tr>
+                                </table>
+            
+                                <div id="button-container">
+                                    <button type="button" class="main-btn" id="update-button">Update Profile</button>
+                                    <button type="button"  class="main-btn" id="save-button" >Save</button>
+                                    <button type="button"  class="main-btn" id="Cancel-button" >Cancel</button>
+                                </div>
+            
+                            </form>
+                        </div>
+                    </section>
+        
+                    <!-- <section class="main-password-change">
+                        <div class="heading">
+                            <h1>Password</h1><h1>Change</h1>
+                        </div>
+                        <div class="password-box">
+                            <form id="password-form">
+                                <table>
+                                    <tr>
+                                        <td><label for="oldPassword">Old Password</label></td>
+                                        <td><input type="password" id="oldPassword" name="oldPassword" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="newPassword">New Password</label></td>
+                                        <td><input type="password" id="newPassword" name="newPassword" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="confirmPassword">Confirm Password</label></td>
+                                        <td><input type="password" id="confirmPassword" name="confirmPassword" ></td>
+                                    </tr>
+                                </table>
+            
+                                <div id="button-container">
+                                    <button type="button" class="main-btn" id="update-password">Update Password</button>
+                                </div>
+            
+                            </form>
+                        </div>
+                    </section> -->
                 </div>
             </div>
-        </div>
+            
+        </section>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    
     <script src="../UserProfilePage/UserProfile.js"></script>
-    <script>
-        function openUpdateProfileModal() {
-            // Populate the modal fields with the current values
-            document.getElementById('updateFirstname').value = document.getElementById('firstname').value;
-            document.getElementById('updateLastname').value = document.getElementById('lastname').value;
-            document.getElementById('updateNIC').value = document.getElementById('nic').value;
-            document.getElementById('updateEmail').value = document.getElementById('email').value;
-            document.getElementById('updatePhone').value = document.getElementById('phone').value;
-
-            // Show the modal
-            var modal = new bootstrap.Modal(document.getElementById('updateProfileModal'));
-            modal.show();
-        }
-
-        function updateProfile() {
-            // Here, you would typically send an AJAX request to update the user's profile
-            // For demonstration, we'll just update the fields in the main form
-
-            document.getElementById('firstname').value = document.getElementById('updateFirstname').value;
-            document.getElementById('lastname').value = document.getElementById('updateLastname').value;
-            document.getElementById('email').value = document.getElementById('updateEmail').value;
-            document.getElementById('phone').value = document.getElementById('updatePhone').value;
-
-            // Close the modal
-            var modal = bootstrap.Modal.getInstance(document.getElementById('updateProfileModal'));
-            modal.hide();
-        }
-    </script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

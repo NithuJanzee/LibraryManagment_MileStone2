@@ -5,7 +5,6 @@ using LibraryManagment.Entity;
 using System.Transactions;
 using System.Net;
 using LibraryManagment.DTO.ResponseDTO.BookTransactionResponse;
-using System.Data;
 
 
 namespace LibraryManagment.Repository.BookTransaction
@@ -279,25 +278,6 @@ namespace LibraryManagment.Repository.BookTransaction
             }
             return MainDTOs;
         }
-
-        //Delete Transaction
-        public async Task<bool> ReturnDelete(Guid id)
-        {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
-            {
-                await connection.OpenAsync();
-
-                string query = "DELETE FROM LibraryManagment.dbo.BookTransactions WHERE Id = @TransactionId";
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.Add("@TransactionId", SqlDbType.UniqueIdentifier).Value = id;
-
-                    int affectedRows = await command.ExecuteNonQueryAsync();
-                    return affectedRows > 0;
-                }
-            }
-        }
-
     }
 
 }

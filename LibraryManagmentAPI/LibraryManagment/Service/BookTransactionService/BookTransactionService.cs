@@ -152,19 +152,6 @@ namespace LibraryManagment.Service.BookTransactionService
                 throw new Exception("error" + ex);
             }
         }
-        //Delete Transaction
-        public async Task<bool> ReturnDelete(Guid Id)
-        {
-            try
-            {
-                var response = await _bookTransactionRepository.ReturnDelete(Id);
-                return response;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("errpr" + ex);
-            }
-        }
     }
 }
     

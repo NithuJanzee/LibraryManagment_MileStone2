@@ -44,46 +44,5 @@ namespace LibraryManagment.Service.HistoryService
 
             return history;  
         }
-
-
-        //update returnd
-        public async Task<bool> UpdateReturnedDate(Guid userId, Guid bookId, string status)
-        {
-            try
-            {
-                return await _historyRepository.UpdateReturnedDate(userId, bookId, status);
-            }
-            catch (Exception ex)
-            {
-                
-                Console.WriteLine($"Error updating return date: {ex.Message}");
-                throw;
-            }
-        }
-
-        //Get all 
-        public async Task<List<History>> GetAll()
-        {
-            try
-            {
-                var response = await _historyRepository.GetAll();
-                return response;
-            }catch(Exception ex)
-            {
-                throw new Exception("Error" + ex);
-            }
-        }
-        //Get by user id
-        public async Task<List<History>> GetByUserId(Guid Id)
-        {
-            try
-            {
-                var response = await _historyRepository.GetByUserId(Id);
-                return response;
-            }catch( Exception ex)
-            {
-                throw new Exception("Error" + ex);
-            }
-        }
     }
 }
