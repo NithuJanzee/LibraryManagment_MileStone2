@@ -21,6 +21,14 @@
 
   }
 
+
+  .display-4{
+    font-family:Papyrus;
+   text-shadow: 4px 2px #120101;
+    color: #f5c04b;
+    
+  }
+
   .admin{
     border-radius: 10px;
     font-family: Lucida Handwriting;
