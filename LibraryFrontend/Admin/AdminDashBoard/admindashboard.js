@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     document.getElementById("totalLendingBooks").innerHTML = countLendBooks;
   };
 
-  //Lending request Table
+  //L    
   const LendingTable = async () => {
     const fetchAllLendingRequest = await fetch(
       `http://localhost:5000/api/BookTransaction/AllRequestedData`
@@ -366,17 +366,152 @@ document.addEventListener("DOMContentLoaded", async (event) => {
           method: 'POST',
           body: formData,
         });
-        if (response)
-        {
-          console.log("OK")
+        if (response) {
+          window.location.reload();
         }
       });
     };
 
+
+    //Manage Return Process
+    const BookReturnManagement = () => {
+      const ManageReturnBtn = document.getElementById('ManageReturnBtn');
+      ManageReturnBtn.addEventListener('click', async () => {
+        const GetAllLendingData = await fetch(`http://localhost:5000/api/BookTransaction/GetAllLending`);
+        const LendingData = await GetAllLendingData.json();
+
+        let ReturnManagementTableTemplate = '';
+        for (const data of LendingData) {
+          const UserDetails = await fetch(`http://localhost:5000/api/User/UserDetailsGUID?ID=${data.userId}`);
+          const User = await UserDetails.json();
+
+          const BookDetails = await fetch(`http://localhost:5000/api/Book/GetById?id=${data.bookId}`);
+          const Book = await BookDetails.json();
+
+          const lendingDate = new Date(data.lendingDate).toLocaleDateString("en-CA");
+          const DueDate = new Date(data.returnDate).toLocaleDateString("en-CA");
+
+          const CheckDueStatus = async () => {
+            const checkStatus = await fetch(`http://localhost:5000/api/BookTransaction/CheckTheOverDue?transactionID=${data.transactionId}`, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              }
+            });
+            return checkStatus;
+          };
+
+          const StatusResponse = await CheckDueStatus();
+          const StatusDue = await StatusResponse.json();
+
+          const statusButton = StatusDue == true
+            ? `<button type="button" class="btn btn-success" 
+            data-tId="${data.transactionId}"
+            data-BId="${data.bookId}"
+            data-UId="${data.userId}"
+            data-Status="${'returned-onTime'}"
+            >In-time</button>`
+            : `<button type="button" class="btn btn-danger" 
+            data-tId="${data.transactionId}"
+            data-BId="${data.bookId}"
+            data-UId="${data.userId}"
+            data-Status="${'returned-overdue'}"
+            >OverDue</button>`;
+
+          ReturnManagementTableTemplate += `
+            <tr>
+              <td>${User.firstName} ${User.lastName}</td>
+              <td>${Book.name}</td>
+              <td>${lendingDate}</td>
+              <td>${DueDate}</td>
+              <td class="statusBtn">${statusButton}</td>
+            </tr>
+          `;
+        }
+
+        document.getElementById('returnsListBody').innerHTML = ReturnManagementTableTemplate;
+        const statusBtn = document.querySelectorAll('.statusBtn');
+        statusBtn.forEach((button) => {
+          button.addEventListener('click', async (event) => {
+            const TransactionID = event.target.getAttribute('data-tId');
+            const BookId = event.target.getAttribute('data-BId');
+            const UserId = event.target.getAttribute('data-UId');
+            const Status = event.target.getAttribute('data-Status');
+
+            const IncreaseBookQuantity = await fetch(`http://localhost:5000/api/BookTransaction/increaseQuantityByOne?BookId=${BookId}`, {
+              method: "PUT",
+              headers: {
+                "Content-Type": "application/json",
+              },
+            })
+            if (IncreaseBookQuantity) {
+              const UpdateHistoryTable = await fetch(`http://localhost:5000/api/History/return?userId=${UserId}&bookId=${BookId}&status=${Status}`, {
+                method: "PUT",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              })
+              if (UpdateHistoryTable) {
+                const DeleteTransaction = await fetch(`http://localhost:5000/api/BookTransaction/ReturnDelete?ID=${TransactionID}`, {
+                  method: "DELETE", 
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                })
+                if (DeleteTransaction) {
+                  window.location.reload()
+                }
+              }
+            }
+          });
+        })
+
+      });
+      //end book return management
+    };
+
+    //Reports model
+    const ReportsModel = ()=>{
+      const ReportBtn = document.getElementById('ManageReportBtn');
+      ReportBtn.addEventListener('click' , async()=>{
+        const GetAllReportData = await fetch (`http://localhost:5000/api/History/GetAll`);
+        const GetAllReport = await GetAllReportData.json();
+        console.log(GetAllReport)
+        
+        let ReportTemplate = '';
+        for (const data of GetAllReport) {
+          const GetUserData = await fetch(`http://localhost:5000/api/User/UserDetailsGUID?ID=${data.userId}`)
+          const User = await GetUserData.json()
+         
+          const GetBookData = await fetch(`http://localhost:5000/api/Book/GetById?id=${data.bookId}`)
+          const Book = await GetBookData.json()
+
+          const RequestDate = new Date(data.requestedDate).toLocaleDateString("en-CA");
+          const lendedDate = data.lendedDate ? new Date(data.lendedDate).toLocaleDateString("en-CA") : "N/A";
+          const dueDate = data.dueDate ? new Date(data.dueDate).toLocaleDateString("en-CA") : "N/A";
+          const returnedDate = data.returnedDate ? new Date(data.returnedDate).toLocaleDateString("en-CA") : "N/A";
+          
+          ReportTemplate+=` 
+                            <tr>
+                                <td>${User.firstName} ${User.lastName}</td>
+                                <td>${Book.name}</td>
+                                <td>${RequestDate}</td>
+                                <td>${lendedDate}</td>
+                                <td>${dueDate}</td>
+                                <td>${returnedDate}</td>
+                                <td>${data.status}</td>
+                            </tr>
+          `
+        } 
+        document.getElementById('reportsListBody').innerHTML = ReportTemplate;
+      })
+    }
+
+
     SetBookModel();
     AddNewBook();
-
-
+    BookReturnManagement()
+    ReportsModel()
   };
 
   function openManageBookModal() {
