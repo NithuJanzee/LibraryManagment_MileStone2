@@ -312,8 +312,8 @@ document.addEventListener("DOMContentLoaded", async (event) => {
       );
       const AllAuthor = await AllAuthorData.json();
       let AuthorTemplate = '';
-      AllAuthor.forEach((data)=>{
-        AuthorTemplate+=`
+      AllAuthor.forEach((data) => {
+        AuthorTemplate += `
         <option value="${data.id}">${data.name}</option>
         `
       })
@@ -323,26 +323,61 @@ document.addEventListener("DOMContentLoaded", async (event) => {
       const allGenreData = await fetch(`http://localhost:5000/api/GenreControler/GetAllGenre`);
       const allGenre = await allGenreData.json();
       let GenreTemplate = ``
-      allGenre.forEach((data)=>{
-        GenreTemplate+=`
+      allGenre.forEach((data) => {
+        GenreTemplate += `
         <option value="${data.id}">${data.name}</option>
         `
       })
-      document.getElementById('genre').innerHTML =` <option selected disabled value="">Select Genre</option>` + GenreTemplate
+      document.getElementById('genre').innerHTML = ` <option selected disabled value="">Select Genre</option>` + GenreTemplate
 
       //Add publication drop down
       const AllPublicationData = await fetch(`http://localhost:5000/api/Publication/GetAllPublication`);
       const AllPublication = await AllPublicationData.json()
       let PublicationTemplate = '';
-      AllPublication.forEach((data)=>{
+      AllPublication.forEach((data) => {
         PublicationTemplate += `
         <option value="${data.id}">${data.name}</option>
         `
       })
-      document.getElementById('publishPublication').innerHTML =`<option selected disabled value="">Select Publish Date</option>` + PublicationTemplate
+      document.getElementById('publishPublication').innerHTML = `<option selected disabled value="">Select Publish Date</option>` + PublicationTemplate;
     };
-    SetBookModel()
-};
+
+    const AddNewBook = async () => {
+      const AddNewBookBtn = document.getElementById('AddNewBookBtn');
+      AddNewBookBtn.addEventListener('click', async () => {
+        const BookTitle = document.getElementById('bookTitle').value;
+        const Quantity = document.getElementById('quantity').value;
+        const Author = document.getElementById('authorSelect').value;
+        const Genre = document.getElementById('genre').value;
+        const Publication = document.getElementById('publishPublication').value;
+        const bookPhotos = document.getElementById('BookPhotos').files;
+
+        const formData = new FormData();
+        formData.append('Name', BookTitle);
+        formData.append('copies', Quantity);
+        formData.append('AuthorId', Author);
+        formData.append('GenreId', Genre);
+        formData.append('PublicationId', Publication);
+
+        for (let i = 0; i < bookPhotos.length; i++) {
+          formData.append('Image', bookPhotos[i]);
+        }
+        const response = await fetch('http://localhost:5000/api/Book/Addbook', {
+          method: 'POST',
+          body: formData,
+        });
+        if (response)
+        {
+          console.log("OK")
+        }
+      });
+    };
+
+    SetBookModel();
+    AddNewBook();
+
+
+  };
 
   function openManageBookModal() {
     const manageBookModal = new bootstrap.Modal(
