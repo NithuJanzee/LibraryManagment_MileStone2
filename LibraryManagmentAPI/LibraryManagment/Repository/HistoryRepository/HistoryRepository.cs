@@ -15,17 +15,17 @@ namespace LibraryManagment.Repository.HistoryRepository
 
         public async Task<History> HistoryRequested(Guid userId, Guid bookId)
         {
-           
+
             var history = new History
             {
-                Id = Guid.NewGuid(),            
-                UserId = userId,                
-                BookId = bookId,                
-                Status = "requested",          
-                RequestedDate = DateTime.Now,  
-                LendedDate = null,            
-                DueDate = null,                 
-                ReturnedDate = null   
+                Id = Guid.NewGuid(),
+                UserId = userId,
+                BookId = bookId,
+                Status = "requested",
+                RequestedDate = DateTime.Now,
+                LendedDate = null,
+                DueDate = null,
+                ReturnedDate = null
             };
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
@@ -36,19 +36,19 @@ namespace LibraryManagment.Repository.HistoryRepository
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                   
+
                     cmd.Parameters.AddWithValue("@Id", history.Id);
                     cmd.Parameters.AddWithValue("@UserId", history.UserId);
                     cmd.Parameters.AddWithValue("@BookId", history.BookId);
                     cmd.Parameters.AddWithValue("@Status", history.Status);
                     cmd.Parameters.AddWithValue("@RequestedDate", history.RequestedDate ?? (object)DBNull.Value);
 
-                    await conn.OpenAsync();  
+                    await conn.OpenAsync();
                     await cmd.ExecuteNonQueryAsync();
                 }
             }
 
-           
+
             return history;
         }
 
@@ -60,8 +60,8 @@ namespace LibraryManagment.Repository.HistoryRepository
                 UserId = userId,
                 BookId = bookId,
                 Status = "lended",
-                LendedDate = DateTime.Now, 
-                DueDate = DateTime.Now.AddDays(7)  
+                LendedDate = DateTime.Now,
+                DueDate = DateTime.Now.AddDays(7)
             };
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
@@ -86,10 +86,41 @@ namespace LibraryManagment.Repository.HistoryRepository
                 }
             }
 
-            return history;  
+            return history;
         }
 
         //next update it into returned ontime / overdue
+        public async Task<bool> UpdateReturnedDate(Guid userId, Guid bookId, string status)
+        {
+            // Define allowed statuses based on the CHECK constraint
+            var allowedStatuses = new List<string>
+            {
+                "returned-overdue",
+                "returned-onTime",
+                "lending",
+                "requested"
+            };
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"
+                    UPDATE dbo.History
+                    SET ReturnedDate = GETDATE(),  -- Use the current date and time
+                        Status = @Status
+                    WHERE UserId = @UserId AND BookId = @BookId";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Status", status);
+                    cmd.Parameters.AddWithValue("@UserId", userId);
+                    cmd.Parameters.AddWithValue("@BookId", bookId);
+
+                    await conn.OpenAsync();
+                    int affectedRows = await cmd.ExecuteNonQueryAsync();
+                    return affectedRows > 0;
+                }
+            }
+        }
 
     }
 }

@@ -366,17 +366,91 @@ document.addEventListener("DOMContentLoaded", async (event) => {
           method: 'POST',
           body: formData,
         });
-        if (response)
-        {
-          console.log("OK")
+        if (response) {
+          window.location.reload();
         }
       });
     };
 
+
+    //Manage Return Process
+    const BookReturnManagement = () => {
+      const ManageReturnBtn = document.getElementById('ManageReturnBtn');
+      ManageReturnBtn.addEventListener('click', async () => {
+        const GetAllLendingData = await fetch(`http://localhost:5000/api/BookTransaction/GetAllLending`);
+        const LendingData = await GetAllLendingData.json();
+    
+        let ReturnManagementTableTemplate = '';
+        for (const data of LendingData) {
+          const UserDetails = await fetch(`http://localhost:5000/api/User/UserDetailsGUID?ID=${data.userId}`);
+          const User = await UserDetails.json();
+    
+          const BookDetails = await fetch(`http://localhost:5000/api/Book/GetById?id=${data.bookId}`);
+          const Book = await BookDetails.json();
+    
+          const lendingDate = new Date(data.lendingDate).toLocaleDateString("en-CA");
+          const DueDate = new Date(data.returnDate).toLocaleDateString("en-CA");
+    
+          const CheckDueStatus = async () => {
+            const checkStatus = await fetch(`http://localhost:5000/api/BookTransaction/CheckTheOverDue?transactionID=${data.transactionId}`, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              }
+            });
+            return checkStatus;
+          };
+    
+          const StatusResponse = await CheckDueStatus();
+          const StatusDue = await StatusResponse.json();
+          
+          const statusButton = StatusDue == true
+            ? `<button type="button" class="btn btn-success" 
+            data-tId="${data.transactionId}"
+            data-BId="${data.bookId}"
+            data-UId="${data.userId}"
+            data-Status="${'returned-onTime'}"
+            >In-time</button>`
+            : `<button type="button" class="btn btn-danger" 
+            data-tId="${data.transactionId}"
+            data-BId="${data.bookId}"
+            data-UId="${data.userId}"
+            data-Status="${'returned-overdue'}"
+            >OverDue</button>`;
+    
+          ReturnManagementTableTemplate += `
+            <tr>
+              <td>${User.firstName} ${User.lastName}</td>
+              <td>${Book.name}</td>
+              <td>${lendingDate}</td>
+              <td>${DueDate}</td>
+              <td class="statusBtn">${statusButton}</td>
+            </tr>
+          `;
+        }
+       
+        document.getElementById('returnsListBody').innerHTML = ReturnManagementTableTemplate;
+        const statusBtn = document.querySelectorAll('.statusBtn');
+        statusBtn.forEach((button)=>{
+          button.addEventListener('click' , async(event)=>{
+            const TransactionID = event.target.getAttribute('data-tId');
+            const BookId= event.target.getAttribute('data-BId');
+            const UserId = event.target.getAttribute('data-UId');
+            const Status = event.target.getAttribute('data-Status');
+
+          
+            
+          });
+        })
+
+      });
+      //end book return management
+    };
+    
+
     SetBookModel();
     AddNewBook();
-
-
+    BookReturnManagement()
   };
 
   function openManageBookModal() {

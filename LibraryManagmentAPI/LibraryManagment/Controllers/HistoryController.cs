@@ -51,5 +51,32 @@ namespace LibraryManagment.Controllers
             }
  
         }
+        [HttpPut("return")]
+        public async Task<IActionResult> UpdateReturnDate(Guid userId, Guid bookId, [FromQuery] string status)
+        {
+            if (userId == Guid.Empty || bookId == Guid.Empty)
+            {
+                return BadRequest("User ID and Book ID must be provided.");
+            }
+
+            try
+            {
+                bool result = await _historyService.UpdateReturnedDate(userId, bookId, status);
+                if (result)
+                {
+                    return Ok("Return date updated successfully.");
+                }
+                return NotFound("No records found to update.");
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in UpdateReturnDate: {ex.Message}");
+                return StatusCode(500, "An error occurred while processing your request.");
+            }
+        }
     }
 }

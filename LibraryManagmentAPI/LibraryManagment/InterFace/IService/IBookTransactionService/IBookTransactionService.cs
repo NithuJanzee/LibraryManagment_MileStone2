@@ -16,6 +16,7 @@ namespace LibraryManagment.InterFace.IService.IBookTransactionService
         Task<List<BookTransactionMainDTO>> GetAllRequestdData();
         Task<List<BookTransactionMainDTO>> GetAllLending();
         Task<List<BookTransactionMainDTO>> GetLendingBooksByID(Guid ID);
+        Task<bool> ReturnDelete(Guid Id);
 
     }
 }
