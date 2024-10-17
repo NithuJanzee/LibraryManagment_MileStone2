@@ -379,18 +379,18 @@ document.addEventListener("DOMContentLoaded", async (event) => {
       ManageReturnBtn.addEventListener('click', async () => {
         const GetAllLendingData = await fetch(`http://localhost:5000/api/BookTransaction/GetAllLending`);
         const LendingData = await GetAllLendingData.json();
-    
+
         let ReturnManagementTableTemplate = '';
         for (const data of LendingData) {
           const UserDetails = await fetch(`http://localhost:5000/api/User/UserDetailsGUID?ID=${data.userId}`);
           const User = await UserDetails.json();
-    
+
           const BookDetails = await fetch(`http://localhost:5000/api/Book/GetById?id=${data.bookId}`);
           const Book = await BookDetails.json();
-    
+
           const lendingDate = new Date(data.lendingDate).toLocaleDateString("en-CA");
           const DueDate = new Date(data.returnDate).toLocaleDateString("en-CA");
-    
+
           const CheckDueStatus = async () => {
             const checkStatus = await fetch(`http://localhost:5000/api/BookTransaction/CheckTheOverDue?transactionID=${data.transactionId}`, {
               method: "POST",
@@ -400,10 +400,10 @@ document.addEventListener("DOMContentLoaded", async (event) => {
             });
             return checkStatus;
           };
-    
+
           const StatusResponse = await CheckDueStatus();
           const StatusDue = await StatusResponse.json();
-          
+
           const statusButton = StatusDue == true
             ? `<button type="button" class="btn btn-success" 
             data-tId="${data.transactionId}"
@@ -417,7 +417,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
             data-UId="${data.userId}"
             data-Status="${'returned-overdue'}"
             >OverDue</button>`;
-    
+
           ReturnManagementTableTemplate += `
             <tr>
               <td>${User.firstName} ${User.lastName}</td>
@@ -428,25 +428,48 @@ document.addEventListener("DOMContentLoaded", async (event) => {
             </tr>
           `;
         }
-       
+
         document.getElementById('returnsListBody').innerHTML = ReturnManagementTableTemplate;
         const statusBtn = document.querySelectorAll('.statusBtn');
-        statusBtn.forEach((button)=>{
-          button.addEventListener('click' , async(event)=>{
+        statusBtn.forEach((button) => {
+          button.addEventListener('click', async (event) => {
             const TransactionID = event.target.getAttribute('data-tId');
-            const BookId= event.target.getAttribute('data-BId');
+            const BookId = event.target.getAttribute('data-BId');
             const UserId = event.target.getAttribute('data-UId');
             const Status = event.target.getAttribute('data-Status');
 
-          
-            
+            const IncreaseBookQuantity = await fetch(`http://localhost:5000/api/BookTransaction/increaseQuantityByOne?BookId=${BookId}`, {
+              method: "PUT",
+              headers: {
+                "Content-Type": "application/json",
+              },
+            })
+            if (IncreaseBookQuantity) {
+              const UpdateHistoryTable = await fetch(`http://localhost:5000/api/History/return?userId=${UserId}&bookId=${BookId}&status=${Status}`, {
+                method: "PUT",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              })
+              if (UpdateHistoryTable) {
+                const DeleteTransaction = await fetch(`http://localhost:5000/api/BookTransaction/ReturnDelete?ID=${TransactionID}`, {
+                  method: "DELETE", 
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                })
+                if (DeleteTransaction) {
+                  window.location.reload()
+                }
+              }
+            }
           });
         })
 
       });
       //end book return management
     };
-    
+
 
     SetBookModel();
     AddNewBook();
