@@ -78,5 +78,30 @@ namespace LibraryManagment.Controllers
                 return StatusCode(500, "An error occurred while processing your request.");
             }
         }
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAllonTime()
+        {
+            try
+            {
+                var data = await _historyService.GetAll();
+                return Ok(data);
+            }catch(Exception ex)
+            {
+                return NotFound("Data not found");
+            }
+        }
+        [HttpGet("GetByUserId")]
+        public async Task<IActionResult> GetByUserId(Guid Id)
+        {
+            try
+            {
+                var data = await _historyService.GetByUserId(Id);
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return NotFound("Data not found");
+            }
+        }
     }
 }
