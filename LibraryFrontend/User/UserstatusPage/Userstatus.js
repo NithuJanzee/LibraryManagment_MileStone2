@@ -41,5 +41,7 @@ document.addEventListener('DOMContentLoaded' , async(event)=>{
             document.getElementById('TableHistoryData').innerHTML=HistoryTemplate;
         }
         GetUserHistory();
+    }else{
+        alert('please log in')
     }
 })

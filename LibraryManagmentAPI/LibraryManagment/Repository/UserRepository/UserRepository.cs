@@ -74,7 +74,7 @@ namespace LibraryManagment.Repository.UserRepository
             {
                 var command = new SqlCommand("SELECT COUNT(*) FROM Users WHERE NIC = @NIC AND Password = @Password", connection);
                 command.Parameters.AddWithValue("@NIC", userLogin.NIC);
-                command.Parameters.AddWithValue("@Password",userLogin.Password);
+                command.Parameters.AddWithValue("@Password", userLogin.Password);
 
                 await connection.OpenAsync();
                 var result = await command.ExecuteScalarAsync();
@@ -123,21 +123,21 @@ namespace LibraryManagment.Repository.UserRepository
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 await connection.OpenAsync();
-                string query = "SELECT UserId, FirstName, LastName, NIC, Email, PhoneNumber FROM Users"; 
+                string query = "SELECT UserId, FirstName, LastName, NIC, Email, PhoneNumber FROM Users";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    using (SqlDataReader reader = await command.ExecuteReaderAsync()) 
+                    using (SqlDataReader reader = await command.ExecuteReaderAsync())
                     {
-                        while (await reader.ReadAsync()) 
+                        while (await reader.ReadAsync())
                         {
                             users.Add(new UserResponseDTO()
                             {
-                                UserId = reader.GetGuid(0),        
-                                FirstName = reader.GetString(1),   
-                                LastName = reader.GetString(2),     
-                                NIC = reader.GetString(3),         
-                                Email = reader.GetString(4),        
-                                PhoneNumber = reader.GetString(5)   
+                                UserId = reader.GetGuid(0),
+                                FirstName = reader.GetString(1),
+                                LastName = reader.GetString(2),
+                                NIC = reader.GetString(3),
+                                Email = reader.GetString(4),
+                                PhoneNumber = reader.GetString(5)
                             });
                         }
                     }
@@ -178,6 +178,58 @@ namespace LibraryManagment.Repository.UserRepository
                 }
             }
             return userResponseDTO;
+        }
+        //Edit user
+        public async Task<bool> UpdateUserAsync(Guid userId, UserEditRequestDTO userEditRequest)
+        {
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                List<string> updateFields = new List<string>();
+                List<SqlParameter> parameters = new List<SqlParameter>();
+
+                if (!string.IsNullOrEmpty(userEditRequest.FirstName))
+                {
+                    updateFields.Add("[FirstName] = @FirstName");
+                    parameters.Add(new SqlParameter("@FirstName", userEditRequest.FirstName));
+                }
+                if (!string.IsNullOrEmpty(userEditRequest.LastName))
+                {
+                    updateFields.Add("[LastName] = @LastName");
+                    parameters.Add(new SqlParameter("@LastName", userEditRequest.LastName));
+                }
+                if (!string.IsNullOrEmpty(userEditRequest.Email))
+                {
+                    updateFields.Add("[Email] = @Email");
+                    parameters.Add(new SqlParameter("@Email", userEditRequest.Email));
+                }
+                if (!string.IsNullOrEmpty(userEditRequest.PhoneNumber))
+                {
+                    updateFields.Add("[PhoneNumber] = @PhoneNumber");
+                    parameters.Add(new SqlParameter("@PhoneNumber", userEditRequest.PhoneNumber));
+                }
+                if (!string.IsNullOrEmpty(userEditRequest.Password))
+                {
+                    updateFields.Add("[Password] = @Password");
+                    parameters.Add(new SqlParameter("@Password", userEditRequest.Password));
+                }
+
+                if (updateFields.Count == 0)
+                {
+                    return false; 
+                }
+
+                string updateQuery = $"UPDATE [LibraryManagment].[dbo].[Users] SET {string.Join(", ", updateFields)} WHERE [UserId] = @UserId";
+                parameters.Add(new SqlParameter("@UserId", userId));
+
+                using (SqlCommand command = new SqlCommand(updateQuery, connection))
+                {
+                    command.Parameters.AddRange(parameters.ToArray());
+                    int rowsAffected = await command.ExecuteNonQueryAsync();
+                    return rowsAffected > 0;
+                }
+            }
         }
     }
 

@@ -13,5 +13,6 @@ namespace LibraryManagment.InterFace.IRepository.IUserRepo
         Task<UserResponseDTO> FindUserWithNic(string NIC);
         Task<List<UserResponseDTO>> GetAllUsers();
         Task<UserResponseDTO> FindUserGUID(Guid ID);
+        Task<bool> UpdateUserAsync(Guid userId, UserEditRequestDTO userEditRequest);
     }
 }
