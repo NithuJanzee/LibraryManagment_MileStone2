@@ -114,5 +114,26 @@ namespace LibraryManagment.Controllers
             }
 
         }
+        //Edit User
+        [HttpPut("{userId}")]
+        public async Task<IActionResult> UpdateUser(Guid userId, [FromBody] UserEditRequestDTO userEditRequest)
+        {
+            if (userEditRequest == null)
+            {
+                return BadRequest("Invalid data.");
+            }
+
+            bool isUpdated = await _userService.UpdateUserAsync(userId, userEditRequest);
+
+            if (isUpdated)
+            {
+                return Ok("User updated successfully.");
+            }
+            else
+            {
+                return NotFound("User not found or no fields to update.");
+            }
+        }
+
     }
 }

@@ -136,6 +136,11 @@ namespace LibraryManagment.Service.UserService
                 throw new Exception("Error");
             }
         }
+        //Edit user 
+        public async Task<bool> UpdateUserAsync(Guid userId, UserEditRequestDTO userEditRequest)
+        {
+            return await _userRepository.UpdateUserAsync(userId, userEditRequest);
+        }
 
     }
 }

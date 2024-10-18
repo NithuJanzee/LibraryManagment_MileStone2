@@ -11,5 +11,6 @@ namespace LibraryManagment.InterFace.IService.IUserServ
         Task<UserResponseDTO> FindUserWithNic(string NIC);
         Task<List<UserResponseDTO>> GetAllUsers();
         Task<UserResponseDTO> FindUserGUID(Guid ID);
+        Task<bool> UpdateUserAsync(Guid userId, UserEditRequestDTO userEditRequest);
     }
 }
