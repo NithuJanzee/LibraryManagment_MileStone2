@@ -204,3 +204,23 @@
     font-size: 40px;
   }
   
+  .card {
+    background-color: #343a40; 
+    color: #f5c04b; 
+}
+.form-control {
+    color: #495057; 
+}
+.form-control:focus {
+    background-color: #495057; 
+    color: #f5c04b; 
+    border-color: #f5c04b; 
+}
+.btn-primary, .btn-success {
+    background-color: #f5c04b; 
+    border-color: #f5c04b; 
+}
+.btn-primary:hover, .btn-success:hover {
+    background-color: #e6b23f; 
+    border-color: #e6b23f; 
+}
