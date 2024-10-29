@@ -55,10 +55,9 @@ document.addEventListener("DOMContentLoaded", async (event) => {
                 <td>${Book.name}</td>
                 <td>${Book.copies}</td>
                 <td>
-                    <button type="button" class="acceptBtn" data-id="${Request.transactionId}"
+                    <button type="button" class="acceptBtn btn btn-success" data-id="${Request.transactionId}"
                     data-UserId="${Request.userId}"
                     data-BookId="${Request.bookId}">Accept</button>
-                    <button type="button" id="declineBtn">Decline</button>
                 </td>
             </tr>
             `;
