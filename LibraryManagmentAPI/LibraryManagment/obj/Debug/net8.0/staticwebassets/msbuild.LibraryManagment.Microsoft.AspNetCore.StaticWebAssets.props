@@ -1,11 +1,11 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0595cf10-7cdd-4d34-a7cc-b6cfd3a2b5ed_0_6mM51WAcx1T600Wh.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0048cc05-1a37-45b4-8acf-deae9830ca6b_cog2.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>LibraryManagment</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/LibraryManagment</BasePath>
-      <RelativePath>uploads/0595cf10-7cdd-4d34-a7cc-b6cfd3a2b5ed_0_6mM51WAcx1T600Wh.png</RelativePath>
+      <RelativePath>uploads/0048cc05-1a37-45b4-8acf-deae9830ca6b_cog2.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -14,14 +14,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0595cf10-7cdd-4d34-a7cc-b6cfd3a2b5ed_0_6mM51WAcx1T600Wh.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0048cc05-1a37-45b4-8acf-deae9830ca6b_cog2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\19dce58e-1782-4bd0-8d0a-b65c17536852_don quixote.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0a5b440e-0c0f-4c78-b039-9ba0f69a69c4_Simon Schama au.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>LibraryManagment</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/LibraryManagment</BasePath>
-      <RelativePath>uploads/19dce58e-1782-4bd0-8d0a-b65c17536852_don quixote.jpg</RelativePath>
+      <RelativePath>uploads/0a5b440e-0c0f-4c78-b039-9ba0f69a69c4_Simon Schama au.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -30,14 +30,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\19dce58e-1782-4bd0-8d0a-b65c17536852_don quixote.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0a5b440e-0c0f-4c78-b039-9ba0f69a69c4_Simon Schama au.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\28b4f63c-87f0-4a4a-a68b-984fc6edc3a7_eric-ries.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0acb2bd9-bacf-42b9-bb42-09652a8f06a0_hp2.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>LibraryManagment</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/LibraryManagment</BasePath>
-      <RelativePath>uploads/28b4f63c-87f0-4a4a-a68b-984fc6edc3a7_eric-ries.png</RelativePath>
+      <RelativePath>uploads/0acb2bd9-bacf-42b9-bb42-09652a8f06a0_hp2.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -46,14 +46,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\28b4f63c-87f0-4a4a-a68b-984fc6edc3a7_eric-ries.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0acb2bd9-bacf-42b9-bb42-09652a8f06a0_hp2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\63bd7058-71e0-4c2c-9725-61d4f8864f00_9781408855669-6cfb2099b6e84a4899ce368d6facc242.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0dc47f8e-5d86-4ac8-88de-1fe86f392a01_The Bodley Head 3.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>LibraryManagment</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/LibraryManagment</BasePath>
-      <RelativePath>uploads/63bd7058-71e0-4c2c-9725-61d4f8864f00_9781408855669-6cfb2099b6e84a4899ce368d6facc242.jpg</RelativePath>
+      <RelativePath>uploads/0dc47f8e-5d86-4ac8-88de-1fe86f392a01_The Bodley Head 3.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -62,14 +62,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\63bd7058-71e0-4c2c-9725-61d4f8864f00_9781408855669-6cfb2099b6e84a4899ce368d6facc242.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0dc47f8e-5d86-4ac8-88de-1fe86f392a01_The Bodley Head 3.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\857413ed-1f1c-4492-9fb0-588f2f1c53e2_optimized_large_thumb_stage.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\13f727fa-ad73-4900-b048-5034594dd95f_Führer of Germany2.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>LibraryManagment</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/LibraryManagment</BasePath>
-      <RelativePath>uploads/857413ed-1f1c-4492-9fb0-588f2f1c53e2_optimized_large_thumb_stage.jpg</RelativePath>
+      <RelativePath>uploads/13f727fa-ad73-4900-b048-5034594dd95f_Führer of Germany2.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -78,14 +78,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\857413ed-1f1c-4492-9fb0-588f2f1c53e2_optimized_large_thumb_stage.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\13f727fa-ad73-4900-b048-5034594dd95f_Führer of Germany2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\8b389337-d5a8-4242-9f8b-be9ad72fcfe1_2449aea0111b9619762e1def79066ddb.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\1458bed7-6929-48df-b49a-62917a0349de_hp3.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>LibraryManagment</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/LibraryManagment</BasePath>
-      <RelativePath>uploads/8b389337-d5a8-4242-9f8b-be9ad72fcfe1_2449aea0111b9619762e1def79066ddb.jpg</RelativePath>
+      <RelativePath>uploads/1458bed7-6929-48df-b49a-62917a0349de_hp3.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -94,14 +94,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\8b389337-d5a8-4242-9f8b-be9ad72fcfe1_2449aea0111b9619762e1def79066ddb.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\1458bed7-6929-48df-b49a-62917a0349de_hp3.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\c5622001-29f8-4414-b780-b98b04983484_sorcerers-stone-school-market-edition.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\16152d4b-1d44-49a9-a91a-70a705621a85_nazy1.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>LibraryManagment</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/LibraryManagment</BasePath>
-      <RelativePath>uploads/c5622001-29f8-4414-b780-b98b04983484_sorcerers-stone-school-market-edition.jpg</RelativePath>
+      <RelativePath>uploads/16152d4b-1d44-49a9-a91a-70a705621a85_nazy1.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -110,14 +110,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\c5622001-29f8-4414-b780-b98b04983484_sorcerers-stone-school-market-edition.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\16152d4b-1d44-49a9-a91a-70a705621a85_nazy1.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\d4c77885-eb92-4c15-bf06-a96d8d233235_376126153-454282f5-6a41-47b9-ae01-625526cf8dfc.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\169f7881-1e11-4f50-a018-fd8cb76843ff_cog3.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>LibraryManagment</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/LibraryManagment</BasePath>
-      <RelativePath>uploads/d4c77885-eb92-4c15-bf06-a96d8d233235_376126153-454282f5-6a41-47b9-ae01-625526cf8dfc.jpg</RelativePath>
+      <RelativePath>uploads/169f7881-1e11-4f50-a018-fd8cb76843ff_cog3.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -126,7 +126,343 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\d4c77885-eb92-4c15-bf06-a96d8d233235_376126153-454282f5-6a41-47b9-ae01-625526cf8dfc.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\169f7881-1e11-4f50-a018-fd8cb76843ff_cog3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\1b1cc383-a4d7-4df3-b204-d1f024900271_The Bodley Head  1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/1b1cc383-a4d7-4df3-b204-d1f024900271_The Bodley Head  1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\1b1cc383-a4d7-4df3-b204-d1f024900271_The Bodley Head  1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\2868b545-91f7-4966-8c7a-96cb1ca9e3df_Nazi author.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/2868b545-91f7-4966-8c7a-96cb1ca9e3df_Nazi author.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\2868b545-91f7-4966-8c7a-96cb1ca9e3df_Nazi author.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\2d3d4de8-96c9-4e7f-ab51-4433b5dd0e9d_hp.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/2d3d4de8-96c9-4e7f-ab51-4433b5dd0e9d_hp.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\2d3d4de8-96c9-4e7f-ab51-4433b5dd0e9d_hp.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\3e3072b7-1130-4330-9e65-c6c7bf3ac534_cog1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/3e3072b7-1130-4330-9e65-c6c7bf3ac534_cog1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\3e3072b7-1130-4330-9e65-c6c7bf3ac534_cog1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\4b195920-1dbd-4d53-9791-4177065d5f54_nazy3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/4b195920-1dbd-4d53-9791-4177065d5f54_nazy3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\4b195920-1dbd-4d53-9791-4177065d5f54_nazy3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\56bc667e-b5bb-48f3-91d6-ce4c36a3c442_chancellor of germany Author.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/56bc667e-b5bb-48f3-91d6-ce4c36a3c442_chancellor of germany Author.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\56bc667e-b5bb-48f3-91d6-ce4c36a3c442_chancellor of germany Author.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\56cfc018-4123-4050-8bbb-0746caa4c13c_Mother Goose  original.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/56cfc018-4123-4050-8bbb-0746caa4c13c_Mother Goose  original.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\56cfc018-4123-4050-8bbb-0746caa4c13c_Mother Goose  original.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\68455acc-2252-4fc2-ae70-8a81f1a2b6f8_hp3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/68455acc-2252-4fc2-ae70-8a81f1a2b6f8_hp3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\68455acc-2252-4fc2-ae70-8a81f1a2b6f8_hp3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\6f74a0ac-233d-42ef-98be-2b92193ab61b_Nursery rhyme 1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/6f74a0ac-233d-42ef-98be-2b92193ab61b_Nursery rhyme 1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\6f74a0ac-233d-42ef-98be-2b92193ab61b_Nursery rhyme 1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\73714e06-10d9-440e-b794-9420ebba108e_hp2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/73714e06-10d9-440e-b794-9420ebba108e_hp2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\73714e06-10d9-440e-b794-9420ebba108e_hp2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\7ad5ea18-15f6-4f0e-bfee-45c614faebd5_nazy2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/7ad5ea18-15f6-4f0e-bfee-45c614faebd5_nazy2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\7ad5ea18-15f6-4f0e-bfee-45c614faebd5_nazy2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\890065c0-c76e-4b17-b213-fbc2edb63cb4_hp.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/890065c0-c76e-4b17-b213-fbc2edb63cb4_hp.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\890065c0-c76e-4b17-b213-fbc2edb63cb4_hp.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\898f4868-f53f-494e-aeb9-1400a1108f6f_nazy3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/898f4868-f53f-494e-aeb9-1400a1108f6f_nazy3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\898f4868-f53f-494e-aeb9-1400a1108f6f_nazy3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\95bd6ef0-efbf-492f-8eb7-20fdd8833289_Führer of Germany3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/95bd6ef0-efbf-492f-8eb7-20fdd8833289_Führer of Germany3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\95bd6ef0-efbf-492f-8eb7-20fdd8833289_Führer of Germany3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\b2c28ca6-52c7-4c20-9199-9527e9d3789b_Nazi author.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/b2c28ca6-52c7-4c20-9199-9527e9d3789b_Nazi author.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\b2c28ca6-52c7-4c20-9199-9527e9d3789b_Nazi author.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\bca3e808-b49d-47f3-b0ac-7ff06c195a54_The Bodley Head 2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/bca3e808-b49d-47f3-b0ac-7ff06c195a54_The Bodley Head 2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\bca3e808-b49d-47f3-b0ac-7ff06c195a54_The Bodley Head 2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\d6d6f351-953a-4e54-a9f2-2bb38bd0d3ac_Führer of Germany.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/d6d6f351-953a-4e54-a9f2-2bb38bd0d3ac_Führer of Germany.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\d6d6f351-953a-4e54-a9f2-2bb38bd0d3ac_Führer of Germany.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\e44f708b-5ebb-4e62-ac7c-d83dd5b27739_Nursery rhyme au.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/e44f708b-5ebb-4e62-ac7c-d83dd5b27739_Nursery rhyme au.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\e44f708b-5ebb-4e62-ac7c-d83dd5b27739_Nursery rhyme au.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\f5b7acdd-3a81-4a3e-a60a-a98a0b891890_Simon Schama au.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/f5b7acdd-3a81-4a3e-a60a-a98a0b891890_Simon Schama au.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\f5b7acdd-3a81-4a3e-a60a-a98a0b891890_Simon Schama au.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\f947542b-762d-4dde-aa66-06a6d8c3e25f_Führer of Germany author.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/f947542b-762d-4dde-aa66-06a6d8c3e25f_Führer of Germany author.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\f947542b-762d-4dde-aa66-06a6d8c3e25f_Führer of Germany author.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\feee83e1-f474-4334-8883-3b06ecd80eb8_hp au.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryManagment</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryManagment</BasePath>
+      <RelativePath>uploads/feee83e1-f474-4334-8883-3b06ecd80eb8_hp au.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\feee83e1-f474-4334-8883-3b06ecd80eb8_hp au.jpg))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>
